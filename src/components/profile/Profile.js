@@ -25,6 +25,8 @@ export default function Profile() {
             }
           })
           .then(response => {
+            console.log('here resp');
+            console.log(response);
             setProfileFunction(response.data.user);
           })
           .catch(function (error) {
@@ -43,6 +45,8 @@ export default function Profile() {
     openSource.showGithubProfile === "true" &&
     !(typeof prof === "string" || prof instanceof String)
   ) {
+    console.log('reached');
+    console.log(prof);
     return (
       <Suspense fallback={renderLoader()}>
         <GithubProfileCard prof={prof} key={prof.id} />
