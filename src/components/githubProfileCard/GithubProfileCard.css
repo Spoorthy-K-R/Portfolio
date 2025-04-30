@@ -1,0 +1,99 @@
+.profile-image {
+  border-radius: 50%;
+  border: 0.5rem solid #e1e4e8; /* Replace with your intended githubProfileCardBorder color */
+  margin-left: auto;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 30px 30px -30px; /* lightBoxShadow */
+  transition: all 0.3s ease-out;
+}
+
+.profile-image:hover {
+  box-shadow: none;
+}
+
+.location-div {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* githubProfileCardLocationTS */
+}
+
+.opp-div {
+  padding-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+}
+
+.main-content-profile {
+  flex: 80%;
+  text-align: left;
+}
+
+.image-content-profile {
+  text-align: right;
+  flex: 20%;
+  max-width: 100%;
+  height: auto;
+}
+
+.bio-text {
+  line-height: 30px;
+  font-size: 22px;
+}
+
+.desc-prof {
+  line-height: 45px;
+  font-size: 19px;
+}
+
+.subTitle {
+  color: #8892b0; /* Replace with your subTitle color */
+}
+
+@media (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content-profile {
+    text-align: center;
+    order: 2;
+  }
+
+  .bio-text {
+    font-size: 16px;
+  }
+
+  .image-content-profile {
+    margin-left: auto;
+    margin-right: auto;
+    order: 1;
+  }
+
+  .desc-prof {
+    line-height: 30px;
+    font-size: 16px;
+  }
+
+  .profile-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .profile-image:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 50px 50px -50px;
+    transition: 0.3s ease-out;
+  }
+
+  .prof-title {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: left; /* Add this line */
+  }
+}
