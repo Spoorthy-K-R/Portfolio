@@ -1,4 +1,5 @@
 {
+  "homepage": "https://spoorthy-k-r.github.io/Portfolio/",
   "name": "sample",
   "version": "0.1.0",
   "private": true,
@@ -48,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "web-vitals": "^4.2.4"
   }
 }
