@@ -3,6 +3,9 @@ import "./Education.css";
 import {educationInfo} from "../portfolio";
 import React, {createRef} from "react";
 import {Fade, Slide} from "react-awesome-reveal";
+import degree from "../../assets/lottie/degree";
+import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+
 // import StyleContext from "../../contexts/StyleContext";
 
 function EducationCard({school}) {
@@ -74,13 +77,30 @@ function EducationCard({school}) {
 export default function Education() {
   if (educationInfo.display) {
     return (
-      <div className="education-section" id="education">
-        <h1 className="education-heading">Education</h1>
+    //   <div className="education-content">
+    //   <div className="education-card-container">
+    //     {educationInfo.schools.map((school, index) => (
+    //       <EducationCard key={index} school={school} />
+    //     ))}
+    //   </div>
+    //   <div className="education-animation">
+    //     <DisplayLottie animationData={degree} />
+    //   </div>
+    // </div>
+
+
+    <div className="education-section"> 
+      <h1 className="education-heading">Education</h1>
+      <div className="education-content" id="education">
         <div className="education-card-container">
           {educationInfo.schools.map((school, index) => (
             <EducationCard key={index} school={school} />
           ))}
         </div>
+        <div className="education-animation">
+          <DisplayLottie animationData={degree} />
+        </div>
+      </div>
       </div>
     );
   }
