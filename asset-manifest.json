@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.c7322d65.css",
-    "main.js": "/Portfolio/static/js/main.0f1230aa.js",
-    "static/css/430.411c31a9.chunk.css": "/Portfolio/static/css/430.411c31a9.chunk.css",
-    "static/js/430.bb9e3102.chunk.js": "/Portfolio/static/js/430.bb9e3102.chunk.js",
+    "main.js": "/Portfolio/static/js/main.a6776f68.js",
+    "static/css/42.41f03bdf.chunk.css": "/Portfolio/static/css/42.41f03bdf.chunk.css",
+    "static/js/42.bcb0d069.chunk.js": "/Portfolio/static/js/42.bcb0d069.chunk.js",
     "static/js/488.307650aa.chunk.js": "/Portfolio/static/js/488.307650aa.chunk.js",
     "static/media/TAMULogo.png": "/Portfolio/static/media/TAMULogo.b8dcbb7c456fbc622eb1.png",
     "static/media/Spoorthy-Resume.pdf": "/Portfolio/static/media/Spoorthy-Resume.eead5a65c4e2f0ee646e.pdf",
@@ -19,13 +19,13 @@
     "static/media/pwaLogo.webp": "/Portfolio/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
     "index.html": "/Portfolio/index.html",
     "main.c7322d65.css.map": "/Portfolio/static/css/main.c7322d65.css.map",
-    "main.0f1230aa.js.map": "/Portfolio/static/js/main.0f1230aa.js.map",
-    "430.411c31a9.chunk.css.map": "/Portfolio/static/css/430.411c31a9.chunk.css.map",
-    "430.bb9e3102.chunk.js.map": "/Portfolio/static/js/430.bb9e3102.chunk.js.map",
+    "main.a6776f68.js.map": "/Portfolio/static/js/main.a6776f68.js.map",
+    "42.41f03bdf.chunk.css.map": "/Portfolio/static/css/42.41f03bdf.chunk.css.map",
+    "42.bcb0d069.chunk.js.map": "/Portfolio/static/js/42.bcb0d069.chunk.js.map",
     "488.307650aa.chunk.js.map": "/Portfolio/static/js/488.307650aa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7322d65.css",
-    "static/js/main.0f1230aa.js"
+    "static/js/main.a6776f68.js"
   ]
 }
