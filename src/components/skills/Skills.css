@@ -24,12 +24,7 @@
 }
 
 .subTitle {
-  color: #666; /* Replace this with the actual color you want */
-}
-
-.subTitle.skills-text {
-  font-size: 22px;
-  text-align: left;
+  color: #6c757d; /* Replace with actual value from _globalColor */
 }
 
 /* Media Query */
@@ -69,7 +64,6 @@
   }
 
   .skills-image-div {
-    /* display: none; */
     order: 2;
   }
 }
