@@ -35,10 +35,9 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/spoorthy-k-r",
-  linkedin: "https://www.linkedin.com/in/spoorthy-k-r/",
+  linkedin: "https://www.linkedin.com/in/spoorthy-k-r-1801/",
   gmail: "spoorthykr1801@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  medium: "https://medium.com/@spoo",
+  medium: "https://medium.com/@spoorthykr1801",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -297,8 +296,9 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "SCHEDULE AN INTERVIEW? My Inbox is open for all.",
+    "Schedule an INTERVIEW? My Inbox is open ",
   number: "+91-8660382649",
+  mail: "spoorthykr1801@gmail.com",
   email_address: "spoorthykr1801@gmail.com"
 };
 
