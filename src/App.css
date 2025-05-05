@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+.fixed-side {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  z-index: 1000;
+  background-color: transparent; /* or a subtle background */
+  pointer-events: none; /* ensures it doesn’t block interactions */
+}
+
+.fixed-side.left {
+  left: 0;
+}
+
+.fixed-side.right {
+  right: 0;
+}
+
+.fixed-side-content {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-30%);
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  text-align: center;
+  pointer-events: auto; /* enable interaction for inner content */
+}

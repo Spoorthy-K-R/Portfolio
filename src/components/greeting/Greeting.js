@@ -13,6 +13,7 @@ export default function Greeting() {
   // const {isDark} = useContext(StyleContext);
 
   return (
+    <div className="greeting-container">
     <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
@@ -65,5 +66,6 @@ export default function Greeting() {
         </div>
       </div>
     </Fade>
+    </div>
   );
 }

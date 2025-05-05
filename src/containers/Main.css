@@ -3,3 +3,7 @@
   color: white;
   transition: background-color 0.1s, color 0.1s;
 }
+
+.main-container {
+  background-color: #d7edf6;
+}

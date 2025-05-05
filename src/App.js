@@ -8,6 +8,21 @@ function App() {
   return (
     <div className="App">
       <LinearBuffer/>
+
+      <div className="fixed-side left">
+        <div className="fixed-side-content">
+          {/* vertical text or icons */}
+          {/* spoorthy.kr@tamu.edu */}
+        </div>
+      </div>
+
+      <div className="fixed-side right">
+        <div className="fixed-side-content">
+          {/* vertical text or icons */}
+          spoorthy.kr@tamu.edu
+        </div>
+      </div>
+
       <Main/>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

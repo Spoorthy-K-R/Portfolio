@@ -37,8 +37,10 @@ const Main = () => {
   // };
 
   return (
-    <div>
-      <Header />
+
+    
+    <div className="main-container">
+      <Header />        
       <Greeting />
       <Skills />
       {/* <StackProgress /> */}
