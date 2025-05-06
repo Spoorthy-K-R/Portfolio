@@ -65,3 +65,9 @@
   color: #120da0;
   pointer-events: auto; /* enable interaction for inner content */
 }
+
+@media (max-width: 768px) {
+  .fixed-side {
+    display: none; /* or reposition if you prefer */
+  }
+}
