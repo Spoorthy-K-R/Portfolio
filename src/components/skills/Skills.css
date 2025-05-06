@@ -59,9 +59,9 @@
   }
 
   .skills-text-div {
-    margin-left: 0px;
-    margin-top: 20px; /* Add top margin to separate text and image */
-    margin-right: 50px;
+    margin-left: 10px;
+    margin-top: 10px; /* Add top margin to separate text and image */
+    margin-right: 10px;
   }
 
   .skills-text {
