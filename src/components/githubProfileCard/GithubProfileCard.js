@@ -36,10 +36,10 @@ export default function GithubProfileCard({prof}) {
                 {prof.location}
               </span>
             )}
-              <p className="subTitle blog-subtitle">
+              <p className="subTitle ">
                 Open for opportunities: {prof.hireable}
               </p>
-              <p className="subTitle blog-subtitle">{contactInfo.subtitle}
+              <p className="subTitle ">{contactInfo.subtitle}
                 <a className="email" href={`mailto:${contactInfo.mail}`}>{contactInfo.mail}</a>
               </p>
             <SocialMedia />
