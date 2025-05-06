@@ -26,6 +26,12 @@
   color: #6c757d; /* Replace with actual value from _globalColor */
 }
 
+.skills-text {
+  font-size: 25px !important;
+  text-align: left;
+  color: #6c757d;
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .skills-heading {

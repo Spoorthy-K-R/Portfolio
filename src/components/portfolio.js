@@ -21,7 +21,7 @@ const illustration = {
 
 const greeting = {
   username: "Spoorthy",
-  java: "print(\"Hello World\")🖥️",
+  java: "print(\"Hello World\")",
   title: "I'm Spoorthy",
   subTitle: emoji(
     "A passionate Full Stack Software Developer 👩🏻‍💻 with experience in building backend systems using Java / Spring Boot and responsive UI with JavaScript / React.js. Passionate about AI, I’m eager to apply my skills to create meaningful impact."

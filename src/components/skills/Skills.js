@@ -71,7 +71,7 @@ export default function Skills() {
                 return (
                   <p
                     key={i}
-                    className={"subTitle skills-text"}
+                    className={"skills-text"}
                   >
                     {skills}
                   </p>

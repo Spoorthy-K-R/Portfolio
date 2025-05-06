@@ -62,5 +62,6 @@
   text-orientation: upright;
   writing-mode: vertical-rl;
   text-align: center;
+  color: #120da0;
   pointer-events: auto; /* enable interaction for inner content */
 }

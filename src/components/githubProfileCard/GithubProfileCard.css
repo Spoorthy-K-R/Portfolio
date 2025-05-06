@@ -1,6 +1,6 @@
 .profile-image {
   border-radius: 50%;
-  border: 0.5rem solid #e1e4e8; /* Replace with your intended githubProfileCardBorder color */
+  border: 0.5rem solid #78abee; /* Replace with your intended githubProfileCardBorder color */
   margin-left: auto;
   width: 100%;
   max-width: 350px;
@@ -23,18 +23,25 @@
 
 .row {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 1rem;
 }
 
 .main-content-profile {
-  flex: 80%;
+  flex: 1;
+  min-width: 300px;
   text-align: left;
 }
 
 .image-content-profile {
-  text-align: right;
-  flex: 20%;
-  max-width: 100%;
-  height: auto;
+  flex: 0 0 auto;
+  max-width: 300px;
+  text-align: center;
 }
 
 .bio-text {
@@ -64,25 +71,32 @@
   transform: translateY(-2px); 
 }
 
+.prof-title {
+  font-size: 56px;
+  font-weight: 400;
+}
+
 @media (max-width: 768px) {
   .row {
-    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .main-content-profile {
-    text-align: center;
     order: 2;
+    text-align: center;
+    width: 100%;
+  }
+
+  .image-content-profile {
+    order: 1;
+    width: 100%;
+    max-width: 250px;
   }
 
   .bio-text {
     font-size: 16px;
-  }
-
-  .image-content-profile {
-    margin-left: auto;
-    margin-right: auto;
-    order: 1;
   }
 
   .desc-prof {
@@ -105,9 +119,6 @@
   }
 
   .prof-title {
-    margin: 0;
-    font-size: 40px;
-    font-weight: 400;
-    text-align: left; /* Add this line */
+    font-size: 32px;
   }
 }
