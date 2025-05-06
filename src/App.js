@@ -9,12 +9,12 @@ function App() {
     <div className="App">
       <LinearBuffer/>
 
-      <div className="fixed-side left">
-        <div className="fixed-side-content">
+      {/* <div className="fixed-side left"> */}
+        {/* <div className="fixed-side-content"> */}
           {/* vertical text or icons */}
           {/* spoorthy.kr@tamu.edu */}
-        </div>
-      </div>
+        {/* </div> */}
+      {/* </div> */}
 
       <div className="fixed-side right">
         <div className="fixed-side-content">

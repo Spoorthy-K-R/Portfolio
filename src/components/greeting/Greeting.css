@@ -1,24 +1,24 @@
 /* Container & Main Layout */
 .greeting-container {
   background-color: #d7edf6;
-  padding: 2rem 1rem; /* Adjust padding for smaller screens */
+  padding: 2rem 0rem; /* Adjust padding for smaller screens */
 }
 
 .greet-main,
 .greeting-main {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
-  margin: auto;
-  max-width: 1200px;
+  gap: 5rem;
+  margin-left: 3rem;
+  max-width: 1300px;
 }
 
 /* Responsive Flex Items */
 .greeting-main > * {
   flex: 1 1 400px; /* Allow flex items to shrink on smaller screens */
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 /* Text Section */

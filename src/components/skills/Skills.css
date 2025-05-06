@@ -1,19 +1,26 @@
+/* General Layout */
 .skills-main-div {
   display: flex;
-  width: 100%;
+  width: 98%;
+  /* max-width: 1300px; */
   overflow: hidden;
+  justify-content: space-between;
+  /* padding-left: 2rem; */
 }
 
 .skills-text-div {
-  margin-left: 50px;
+  margin-left: 10px;
+  margin-right: 65px; /* <-- Add this */
+  /* Or use max-width if you want a stricter width limit */
+  /* max-width: 600px; */
 }
 
 .skills-main-div > * {
   flex: 1;
 }
 
+/* Image Adjustments */
 .skills-image-div > img {
-  max-width: 100%;
   height: auto;
 }
 
@@ -32,47 +39,78 @@
   color: #6c757d;
 }
 
-/* Media Query */
+/* Media Query for large screens up to 1380px */
 @media (max-width: 1380px) {
   .skills-heading {
     font-size: 40px;
   }
 }
 
+/* Media Query for tablets and smaller devices (up to 768px) */
 @media (max-width: 768px) {
   .skills-heading {
     font-size: 30px;
     text-align: center;
   }
 
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-  }
-
   .skills-main-div {
     flex-direction: column;
+    align-items: center; /* Center elements in a column */
   }
 
   .skills-text-div {
     margin-left: 0px;
-    margin: 20px;
+    margin-top: 20px; /* Add top margin to separate text and image */
+    margin-right: 50px;
   }
 
   .skills-text {
     font-size: 16px;
+    text-align: center; /* Center text for mobile view */
   }
 
   .skills-text-subtitle {
     font-size: 16px;
-    text-align: center;
+    text-align: center; /* Center subtitle on mobile */
   }
 
   .skills-image-div {
-    order: 2;
+    order: 2; /* Place image below the text */
+    max-width: 80%; /* Adjust image size for mobile screens */
+    margin-top: 20px; /* Add space between image and text */
   }
 }
 
+/* Media Query for very small screens (up to 480px) */
+@media (max-width: 480px) {
+  .skills-heading {
+    font-size: 26px;
+  }
+
+  .skills-text {
+    font-size: 14px;
+  }
+
+  .software-skill-inline > i {
+    font-size: 2rem; /* Smaller icon size for small screens */
+  }
+
+  .software-skill-inline > p {
+    font-size: 8px; /* Smaller text for skill names */
+  }
+
+  .skills-text-div {
+    margin-top: 15px;
+    margin-left: 0px;
+    padding: 0 10px;
+  }
+
+  .skills-image-div {
+    max-width: 100%; /* Ensure the image fits */
+  }
+}
+
+/* Dev Icons Section */
 .dev-icons {
   padding-left: 0;
   list-style: none;
