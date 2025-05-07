@@ -97,9 +97,9 @@ export default function Education() {
             <EducationCard key={index} school={school} />
           ))}
         </div>
-        <div className="education-animation">
+        {/* <div className="education-animation">
           <DisplayLottie animationData={degree} />
-        </div>
+        </div> */}
       </div>
       </div>
     );

@@ -1,0 +1,54 @@
+.education-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 20px 20px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.education-sidebar {
+  width: 30%;
+  /* min-width: 200px; */
+  height: 100px;
+  background-color: #d7edf6;
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.education-item {
+  padding: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #d7edf6;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.education-item:hover {
+  background-color: #58abd1;
+}
+
+.education-item.active {
+  background-color: #58abd1;
+  font-weight: bold;
+}
+
+.education-details {
+  flex: 1;
+  padding: 20px;
+}
+
+.education-logo {
+  object-fit: cover;
+  margin-right: 2rem;
+  width: 6rem;
+  height: 6rem;
+  box-shadow: 0 0.5rem 1rem rgba(163, 9, 9, 0.25); /* assumed $lightBoxShadowDarker */
+  border-radius: 50%;
+}
+
+.education-duration {
+  color: #666;
+  font-style: italic;
+}
