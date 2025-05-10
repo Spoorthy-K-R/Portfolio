@@ -112,9 +112,9 @@ const educationInfo = {
       logo: require("../assets/images/TAMULogo.png"),
       subHeader: "Masters Degree in Computer Science",
       duration: "August 2025 - April 2027",
-      desc: "",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       descBullets: [
-        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       ]
     },
     {
