@@ -37,7 +37,6 @@ export default function Skills() {
     return null;
   }
   return (
-    <div className={ "main"} id="skills">
       <div className="skills-main-div">
         <Fade left duration={1000}>
           <div className="skills-image-div">
@@ -81,6 +80,5 @@ export default function Skills() {
           </div>
         </Fade>
       </div>
-    </div>
   );
 }
