@@ -40,9 +40,34 @@
 }
 
 /* Media Query for large screens up to 1380px */
-@media (max-width: 1380px) {
+@media (max-width: 1380px) and (min-width: 769px) {
   .skills-heading {
-    font-size: 40px;
+    font-size: 50px;
+  }
+
+  .skills-main-div {
+    flex-direction: column; /* Stack the image and text vertically */
+    align-items: center; /* Center both image and text in the middle */
+    text-align: center; /* Center the text */
+  }
+
+  .skills-image-div {
+    display: none;;
+  }
+
+  .skills-text-div {
+    order: 1; /* Ensure text comes after the image */
+    width: 100%; /* Optional: Ensure full width for text section */
+  }
+
+  .skills-text {
+    font-size: 16px;
+    text-align: center; /* Center text for mobile/tablet view */
+  }
+
+  .skills-text-subtitle {
+    font-size: 16px;
+    text-align: center; /* Center subtitle on mobile */
   }
 }
 
@@ -159,3 +184,5 @@
     padding: 0 1rem;
   }
 }
+
+

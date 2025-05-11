@@ -108,6 +108,15 @@
   .greeting-text-p {
     font-size: 20px;
     text-align: center; /* Center text for smaller screens */
+    padding-left: 20px; /* Add padding here if needed */
+    padding-right: 20px; /* Add padding here if needed */
+  }
+
+  .button-greeting-div {
+    justify-content: center; /* Center buttons */
+    flex-wrap: wrap; /* Allow buttons to stack on mobile */
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -116,6 +125,8 @@
   .button-greeting-div {
     justify-content: center; /* Center buttons */
     flex-wrap: wrap; /* Allow buttons to stack on mobile */
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .greeting-text {
