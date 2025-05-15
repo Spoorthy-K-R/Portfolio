@@ -1,54 +1,246 @@
+.education-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-heading {
+  font-size: 56px;
+  font-weight: 400;
+}
+
 .education-container {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 20px 20px;
-  margin-bottom: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  /*max-width: 1000px;     /* Set a constant overall width */
+  width: 100%;           /* So it can shrink on smaller screens */
+  margin: 0 auto;
+  gap: 40px;
   padding: 20px;
 }
 
 .education-sidebar {
-  width: 30%;
-  /* min-width: 200px; */
-  height: 100px;
-  background-color: #d7edf6;
-  padding: 10px;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;    /* Center the .education-list inside */
+}
+
+.education-list {
+  position: relative;
+  padding-left: 30px;
+  display: block;
+  text-align: left;
+}
+
+/* The continuous vertical line */
+.vertical-line {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0; /* fills full height of .education-list */
+  width: 4px;
+  background-color: #c0d3db; /* base grey line */
+  border-radius: 2px;
+  z-index: 1;
 }
 
 .education-item {
-  padding: 12px;
-  margin-bottom: 10px;
-  cursor: pointer;
+  position: relative;
+  padding: 12px 16px;
   background-color: #d7edf6;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.education-item.active::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #58abd1;
+  border-radius: 2px;
+  z-index: 3;
+}
+
+.education-item.active {
+  background-color: #58abd1;
 }
 
 .education-item:hover {
   background-color: #58abd1;
 }
 
-.education-item.active {
-  background-color: #58abd1;
-  font-weight: bold;
+.education-details {
+  text-align: left;
 }
 
-.education-details {
-  flex: 1;
-  padding: 20px;
+.education-bullets{
+  font-size: 20px;
+  color: #6c757d;
 }
 
 .education-logo {
-  object-fit: cover;
+  /* object-fit: cover; */
   margin-right: 2rem;
-  width: 6rem;
-  height: 6rem;
-  box-shadow: 0 0.5rem 1rem rgba(163, 9, 9, 0.25); /* assumed $lightBoxShadowDarker */
+  width: 4rem;
+  height: 4rem;
+  box-shadow: 0 0.5rem 1rem rgba(163, 9, 9, 0.25);
   border-radius: 50%;
 }
 
 .education-duration {
   color: #666;
   font-style: italic;
+}
+
+.section {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  padding:100px 170px
+}
+
+@media screen and (max-width:1280px) {
+  .section {
+  padding:100px
+}
+
+}
+
+@media screen and (max-width:1024px) {
+  .section {
+  padding:50px
+}
+
+}
+
+@media screen and (max-width:768px) {
+  .section {
+  display:block
+}
+
+}
+
+@media screen and (max-width:480px) {
+  .section {
+  padding:50px 35px
+}
+
+}
+
+.section__title {
+  -ms-flex-negative:0;
+  flex-shrink:0;
+  width:200px;
+  margin-right:70px;
+  color:#007bff;
+  text-transform:uppercase;
+  text-align:right;
+  font-weight:700;
+  letter-spacing:2px
+}
+
+@media screen and (max-width:1024px) {
+  .section__title {
+  margin-right:50px
+}
+
+}
+
+@media screen and (max-width:850px) {
+  .section__title {
+  width:150px
+}
+
+}
+
+@media screen and (max-width:768px) {
+  .section__title {
+  text-align:left;
+  width:auto
+}
+
+}
+
+.section__content {
+  font-weight:300;
+  font-size:1rem;
+  width:100%;
+  max-width:650px
+}
+
+@media screen and (max-width:768px) {
+  .section__content {
+  padding-top:30px;
+  padding-left:50px
+}
+
+}
+
+@media screen and (max-width:480px) {
+  .section__content {
+  padding-left:30px
+}
+
+}
+
+.section__content p {
+  margin-top:0;
+  margin-bottom:25px
+}
+
+.section__content .underline-link {
+  position:relative;
+  display:inline-block
+}
+
+.section__content .underline-link:after {
+  position:absolute;
+  top:100%;
+  left:0;
+  width:100%;
+  height:1px;
+  background:#36363c;
+  content:'';
+  opacity:0;
+  -webkit-transition:height .3s,opacity .3s,-webkit-transform .3s;
+  transition:height .3s,opacity .3s,-webkit-transform .3s;
+  transition:height .3s,opacity .3s,transform .3s;
+  transition:height .3s,opacity .3s,transform .3s,-webkit-transform .3s;
+  -webkit-transform:translateY(-5px);
+  transform:translateY(-5px)
+}
+
+.section__content .underline-link:focus:after,.section__content .underline-link:hover:after {
+  height:2px;
+  border-radius:3px;
+  opacity:1;
+  -webkit-transform:translateY(-2px);
+  transform:translateY(-2px)
+}
+
+.experience .jobs {
+  margin-bottom:100px
+}
+
+.experience .job .time-place {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:justify;
+  -ms-flex-pack:justify;
+  justify-content:space-between
+}
+
+@media screen and (max-width:480px) {
+  .experience .job .time-place {
+  display:block
+}
+}
+
+.experience .job__company {
+  font-weight:700
 }

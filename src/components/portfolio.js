@@ -55,6 +55,9 @@ const skillsSection = {
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
       "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+    ),
+    emoji(
+      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
     )
   ],
 
@@ -112,7 +115,7 @@ const educationInfo = {
       logo: require("../assets/images/TAMULogo.png"),
       subHeader: "Masters Degree in Computer Science",
       duration: "August 2025 - April 2027",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.......................",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       ]

@@ -23,7 +23,9 @@ function App() {
         </div>
       </div>
 
-      <Main/>
+      <div className="main-wrapper">
+        <Main />
+      </div>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

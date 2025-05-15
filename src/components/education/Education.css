@@ -1,187 +1,187 @@
+/* :root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  overflow-x: hidden;
+  /* font-family: sans-serif; */
+  color: #333;
+}
+
+.education-section {
+  margin: 10px 20px 50px 20px;
+  padding: 0rem 1rem;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 .education-heading {
+  text-align: center;
+  margin-bottom: 2rem;
   font-size: 56px;
   font-weight: 400;
 }
 
-.education-section {
+.education-container {
   display: flex;
-  flex-direction: column;
-  width: 90%;
-  padding: 0px 0px;
-  margin: 0px auto;
-  margin-top: 2rem;
-  text-align: left;
-}
-
-.education-section > * {
-  flex: 1;
-}
-
-.education-content {
-  display: flex;
-}
-
-.education-animation {
-  width: 500px;
-  margin-left: 10px;
-}
-
-.education-card-container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-  text-align: left;
-}
-
-/* Media Queries */
-@media (max-width: 1380px) {
-
-  .education-heading {
-    font-size: 40px;
-    text-align: left;
-  }
-
-  .education-text-subtitle {
-    font-size: 18px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .education-heading {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .education-text-subtitle {
-    font-size: 16px;
-  }
-}
-
-.education-card {
-  display: flex;
-  flex-direction: row;
-}
-
-.education-card:hover + .education-card-border {
-  border-color: #4fc3f7; /* assumed value for $educationCardBorder */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
   width: 100%;
-  transition: width 0.6s ease-in-out;
 }
 
-.education-card-border {
-  height: 30px;
-  width: 80%;
-  border-top: 2px solid #e0e0e0; /* assumed value for $lightBorder1 */
-  margin-bottom: 20px;
-  transition: width 0.6s ease-in-out;
-}
-
-.education-head {
+/* Sidebar: vertical by default */
+.education-sidebar {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  min-width: 200px;
 }
 
-.education-text-school {
-  margin: 0;
-  font-size: 28px;
-  font-weight: 700;
-  text-overflow: ellipsis;
-  /* overflow: hidden; */
+/* Education list container */
+.education-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-left: 1.25rem;
+}
+
+.vertical-line {
+  position: absolute;
+  left: 0.25rem;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #c0d3db;
+  border-radius: 2px;
+}
+
+/* Sidebar item */
+.education-item {
+  padding: 0.75rem 1rem;
+  background-color: #d7edf6;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  position: relative;
   white-space: nowrap;
-  height: 27px;
 }
 
-.education-roundedimg {
-  object-fit: cover;
-  margin-right: 2rem;
-  width: 6rem;
-  height: 6rem;
-  box-shadow: 0 0.5rem 1rem rgba(163, 9, 9, 0.25); /* assumed $lightBoxShadowDarker */
-  border-radius: 50%;
+.education-item:hover,
+.education-item.active {
+  background-color: #58abd1;
+  color: white;
 }
 
-.education-card-right {
-  max-width: 70%;
+.education-item.active::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #58abd1;
+  border-radius: 2px;
+  z-index: 1;
 }
 
-.education-text-subHeader {
-  color: #333333; /* assumed $textColor */
-  font-weight: 700;
-  font-size: 19px;
-  margin: 0px;
-  padding-top: 0.8rem;
-  line-height: normal;
+/* Main content */
+.education-details {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  text-align: left;
 }
 
-.education-text-duration {
-  color: #555555; /* assumed $titleColor */
-  font-size: 19px;
-  margin: 0px;
-  padding-top: 0.5rem;
-}
-
-.education-text-desc {
-  margin-top: 0.5rem;
+.education-details h2 {
+  /* font-size: clamp(1.5rem, 3vw, 2rem); */
   margin-bottom: 0.5rem;
 }
 
-.education-text-bullets > ul {
-  margin-top: 0.5rem;
+.education-details h3 {
+  /* font-size: clamp(1.125rem, 2.5vw, 1.5rem); */
+  margin-bottom: 0.25rem;
+  color: #555;
 }
 
-/* Media Queries */
+.education-duration {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 1rem;
+}
 
-@media (max-width: 1380px) {
-  .education-card {
+.education-bullets {
+  /* font-size: clamp(1rem, 2vw, 1.125rem); */
+  color: #444;
+  font-size: medium;
+}
+
+.education-bullets li {
+  margin-bottom: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .education-heading {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .education-heading {
+    font-size: 30px;
+  }
+
+  .education-container {
     flex-direction: column;
-    padding-bottom: 10px;
+    align-items: stretch;
+    padding: 0 0.5rem;
   }
-  .education-card-right {
-    max-width: 90%;
-  }
-  .education-card-border {
-    width: 90%;
-  }
-  .education-text-subHeader {
-    padding-top: 0.5rem;
-    font-size: 16px;
-  }
-  .education-text-school {
-    font-size: 20px;
-    height: 23px;
-  }
-  .education-text-duration {
-    font-size: 16px;
-  }
-  .education-roundedimg {
-    width: 4rem;
-    height: 4rem;
-    margin-bottom: 0.5rem;
-    margin-right: 0px;
-  }
-}
 
-@media (max-width: 768px) {
-  .education-card {
-    text-align: center;
-  }
-  .education-card-right {
-    max-width: 100%;
-  }
-  .education-card-border {
+  .education-sidebar {
     width: 100%;
+    flex-direction: row;
   }
-  .education-roundedimg {
-    margin-top: 10px;
-    width: 4rem;
-    height: 4rem;
-    margin-bottom: 1rem;
-    margin-right: 0;
+
+  .education-list {
+    flex-direction: row;
+    padding-left: 0;
+    gap: 1rem;
+    position: relative;
   }
-  .education-text-bullets > ul {
-    max-width: 80%;
-    margin: auto;
+
+  .vertical-line {
+    display: none;
+  }
+
+  .education-item {
+    flex-shrink: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+  }
+
+  .education-item.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    background-color: #58abd1;
+  }
+
+  .education-bullets {
+    /* font-size: clamp(1rem, 2vw, 1.125rem); */
+    color: #444;
+    font-size: medium;
   }
 }

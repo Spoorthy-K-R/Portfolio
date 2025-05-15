@@ -1,7 +1,7 @@
 import "./Education.css";
 // import EducationCard from "../../components/educationCard/EducationCard";
 import {educationInfo} from "../portfolio";
-import React, {createRef} from "react";
+import React, {createRef, useState} from "react";
 import {Fade, Slide} from "react-awesome-reveal";
 import degree from "../../assets/lottie/degree";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
@@ -75,8 +75,42 @@ function EducationCard({school}) {
 }
 
 export default function Education() {
-  if (educationInfo.display) {
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const schools = educationInfo.schools;
     return (
+      <div className="education-section"> 
+      <h1 className="education-heading">Education</h1>
+      <div className="education-container">
+        <div className="education-sidebar">
+            <div className="education-list">
+              <div className="vertical-line" />
+              {schools.map((school, index) => (
+                <div
+                  key={index}
+                  onClick={() => setSelectedIndex(index)}
+                  className={`education-item ${index === selectedIndex ? "active" : ""}`}
+                >
+                  {school.schoolName}
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="education-details">
+            <h2>{schools[selectedIndex].schoolName}</h2>
+            <h3>{schools[selectedIndex].subHeader}</h3>
+            <p className="education-duration">{schools[selectedIndex].duration}</p>
+            {schools[selectedIndex].desc && <p className="education-bullets">{schools[selectedIndex].desc}</p>}
+            {schools[selectedIndex].descBullets.length > 0 && (
+              <p className="education-bullets">
+                {schools[selectedIndex].descBullets.map((bullet, i) => (
+                  <li key={i}>{bullet}</li>
+                ))}
+              </p>
+            )}
+          </div>
+        </div>
+      </div>
+
     //   <div className="education-content">
     //   <div className="education-card-container">
     //     {educationInfo.schools.map((school, index) => (
@@ -89,20 +123,15 @@ export default function Education() {
     // </div>
 
 
-    <div className="education-section"> 
-      <h1 className="education-heading">Education</h1>
-      <div className="education-content" id="education">
-        <div className="education-card-container">
-          {educationInfo.schools.map((school, index) => (
-            <EducationCard key={index} school={school} />
-          ))}
-        </div>
-        {/* <div className="education-animation">
-          <DisplayLottie animationData={degree} />
-        </div> */}
-      </div>
-      </div>
-    );
-  }
-  return null;
+    // <section className="education-section"> 
+    //   <h1 className="education-heading">Education</h1>
+    //   <div className="education-content" id="education">
+    //     <div className="education-card-container">
+    //       {educationInfo.schools.map((school, index) => (
+    //         <EducationCard key={index} school={school} />
+    //       ))}
+    //     </div>
+    //   </div>
+    //   </section>
+)
 }
