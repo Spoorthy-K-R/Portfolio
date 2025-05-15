@@ -34,7 +34,7 @@
 }
 
 .skills-text {
-  font-size: 25px !important;
+  font-size: 24px;
   text-align: left;
   color: #6c757d;
 }
@@ -43,6 +43,7 @@
 @media (max-width: 1380px) and (min-width: 769px) {
   .skills-heading {
     font-size: 50px;
+    margin-bottom: 2rem;
   }
 
   .skills-main-div {
@@ -61,12 +62,12 @@
   }
 
   .skills-text {
-    font-size: 16px;
+    font-size: large !important;
     text-align: center; /* Center text for mobile/tablet view */
   }
 
   .skills-text-subtitle {
-    font-size: 16px;
+    font-size: large;
     text-align: center; /* Center subtitle on mobile */
   }
 }
@@ -76,6 +77,7 @@
   .skills-heading {
     font-size: 30px;
     text-align: center;
+    margin-bottom: 1rem;
   }
 
   .skills-main-div {
@@ -87,10 +89,11 @@
     order: 1;
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 16px;
   }
 
   .skills-text {
-    font-size: 16px;
+    font-size: medium;
     text-align: center; /* Center text for mobile view */
   }
 
@@ -100,20 +103,16 @@
   }
 
   .skills-image-div {
-    order: 2; /* Place image below the text */
-    max-width: 100%; /* Adjust image size for mobile screens */
-    margin-top: 20px; /* Add space between image and text */
+    display: none;;
   }
 }
 
 /* Media Query for very small screens (up to 480px) */
 @media (max-width: 480px) {
-  .skills-heading {
-    font-size: 26px;
-  }
+  
 
   .skills-text {
-    font-size: 14px;
+    font-size: medium;
   }
 
   .software-skill-inline > i {
@@ -139,7 +138,7 @@
 .dev-icons {
   padding-left: 0;
   list-style: none;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 0;
   margin-top: 0;
   text-align: center;
