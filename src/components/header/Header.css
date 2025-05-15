@@ -159,19 +159,24 @@
   top: 0;
 }
 
-@media (max-width: 768px) {
-  
-  .header {
-    font-size: medium;
+@media (min-width: 769px) {
+  .header li {
+    float: left;
   }
-
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header .menu {
+    max-height: none;
+  }
   .header .menu-icon {
-    display:flex;
-    justify-content: end;
+    display: none;
   }
 }
 
-@media (max-width: 1360px) and (min-width: 768px) {
+@media (max-width: 768px) {
   .header {
     font-size: medium;
   }

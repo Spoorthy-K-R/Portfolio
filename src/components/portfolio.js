@@ -112,7 +112,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Texas A&M University",
-      logo: require("../assets/images/tamu.png"),
+      logo: require("../assets/images/TAMULogo.jpg"),
       subHeader: "Masters Degree in Computer Science",
       duration: "August 2025 - April 2027",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.......................",
@@ -173,7 +173,7 @@ const workExperiences = {
     },
     {
       role: "Machine Learning Intern",
-      company: "Bosch Global Software Technologies - Summer Intern",
+      company: "Bosch - Summer Intern",
       companylogo: require("../assets/images/boschlogo.png"),
       date: "Jun 2022 – Jul 2022",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -232,7 +232,7 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Gold Medalist",
       subtitle:
         "First - to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
       image: require("../assets/images/codeInLogo.webp"),
@@ -253,7 +253,7 @@ const achievementSection = {
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Scholarships",
       subtitle:
         "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
       image: require("../assets/images/googleAssistantLogo.webp"),
@@ -265,20 +265,6 @@ const achievementSection = {
         }
       ]
     },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("../assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
   ],
   display: true // Set false to hide this section, defaults to true
 };

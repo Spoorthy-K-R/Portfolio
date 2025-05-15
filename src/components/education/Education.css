@@ -1,6 +1,6 @@
 .experience-cards-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem 2rem;
 }
 
@@ -201,5 +201,161 @@
 
   .experience-div-company {
     height: 7rem;
+  }
+}
+
+.timeline-container {
+  position: relative;
+  margin: 40px 0;
+  padding: 0 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline-icon {
+  position: absolute;
+  top: 20px;
+  background: white;
+  border: 3px solid #58abd1;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 122, 204, 0.3);
+  z-index: 1;
+}
+
+/* Left side timeline items */
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.left .timeline-icon {
+  right: -28px;
+}
+
+/* Right side timeline items */
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-item.right .timeline-icon {
+  left: -28px;
+}
+
+.timeline-content {
+  background: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Date styling */
+.timeline-date {
+  display: block;
+  color: #58abd1;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.timeline-title {
+  margin: 0 0 5px;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.timeline-subtitle {
+  margin: 0 0 10px;
+  color: #666;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.timeline-content p {
+  margin: 0 0 10px;
+}
+
+.timeline-content ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #444;
+}
+
+.timeline-content ul li {
+  margin-bottom: 5px;
+}
+
+/* Vertical line */
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #58abd1;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* Opposite date */
+.timeline-date.opposite {
+  position: absolute;
+  top: 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #58abd1;
+  width: 120px;
+  z-index: 1;
+}
+
+/* For left timeline items, date on right */
+.timeline-item.left .timeline-date.opposite {
+  right: -160px;
+  text-align: left;
+}
+
+/* For right timeline items, date on left */
+.timeline-item.right .timeline-date.opposite {
+  left: -160px;
+  text-align: right;
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 768px) {
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    text-align: left !important;
+    margin-bottom: 30px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0 !important;
+  }
+
+  .timeline-icon {
+    left: 15px !important;
+    right: auto !important;
+  }
+
+  .timeline-container::before {
+    left: 20px;
   }
 }
