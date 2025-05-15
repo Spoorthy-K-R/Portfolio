@@ -1,4 +1,4 @@
-import React, { useState, createRef} from "react";
+import React, { useState, createRef, useContext} from "react";
 import "./WorkExperience.css";
 import {workExperiences} from "../portfolio";
 import {Fade} from "react-awesome-reveal";
@@ -40,7 +40,6 @@ function ExperienceCard({cardInfo}) {
         <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>
         </div>
-
         <img
           crossOrigin={"anonymous"}
           ref={imgRef}
@@ -81,7 +80,8 @@ function ExperienceCard({cardInfo}) {
 }
 
 export default function WorkExperience() {
-  // const {isDark} = useContext(StyleContext);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const experience = workExperiences.experience;
   if (workExperiences.display) {
     return (
       <div id="experience">
@@ -90,6 +90,28 @@ export default function WorkExperience() {
             <div>
               <h1 className="experience-heading">Experiences</h1>
               <div className="experience-cards-div">
+                
+                {/* <div className="education-details">
+                  <h2>{experience[selectedIndex].company}</h2>
+                  <h3>{experience[selectedIndex].role}</h3>
+                  <p className="education-duration">{experience[selectedIndex].date}</p>
+                  {experience[selectedIndex].desc && <p className="education-bullets">{experience[selectedIndex].desc}</p>}
+                </div>
+                <div className="education-sidebar">
+                  <div className="education-list">
+                    <div className="vertical-line" />
+                    {workExperiences.experience.map((card, index) => (
+                      <div
+                        key={index}
+                        onClick={() => setSelectedIndex(index)}
+                        className={`education-item ${index === selectedIndex ? "active" : ""}`}
+                      >
+                        {card.company}
+                      </div>
+                    ))}
+                  </div>
+                </div> */}
+                
                 {workExperiences.experience.map((card, i) => {
                   return (
                     <ExperienceCard

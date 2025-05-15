@@ -160,26 +160,22 @@ const workExperiences = {
     {
       role: "Software Engineer",
       company: "JP Morgan Chase & Co.",
-      companylogo: require("../assets/images/facebookLogo.png"),
-      date: "Feb 2023 – Present",
+      companylogo: require("../assets/images/jpmorganlogo.png"),
+      date: "Jun 2023 – Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("../assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("../assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
+      company: "JP Morgan Chase & Co.",
+      companylogo: require("../assets/images/jpmorganlogo.png"),
+      date: "Feb 2023 – May 2023",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      role: "ML Intern",
+      company: "Bosch Global Software Technologies",
+      companylogo: require("../assets/images/boschlogo.png"),
+      date: "Jun 2022 – Jul 2022",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]

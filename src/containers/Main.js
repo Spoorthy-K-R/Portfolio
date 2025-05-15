@@ -12,7 +12,7 @@ import Skills from "../components/skills/Skills";
 // import {StyleProvider} from "../contexts/StyleContext";
 // import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.css";
-// import WorkExperience from "../components/workExperience/WorkExperience";
+import WorkExperience from "../components/workExperience/WorkExperience";
 
 const Main = () => {
   // const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -44,6 +44,7 @@ const Main = () => {
       <Greeting />
       <Skills />
       {/* <StackProgress /> */}
+      <WorkExperience />
       <Education />
       <Profile/>
     </div>

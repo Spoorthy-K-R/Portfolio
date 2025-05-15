@@ -22,6 +22,7 @@
 }
 
 /* Media Query */
+
 @media (max-width: 1380px) {
   .experience-heading {
     font-size: 40px;
@@ -32,5 +33,178 @@
   .experience-heading {
     font-size: 30px;
     text-align: center;
+  }
+}
+
+/* Root Styles */
+.experience-card,
+.experience-card-dark {
+  position: relative;
+  background-color: #f0f0f0; /* fallback for $lightBackground2 */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc; /* fallback for $lightBorder1 */
+  overflow: hidden;
+}
+
+.experience-card-dark {
+  background-color: #1e1e1e; /* fallback for $darkBackground */
+}
+
+.experience-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 30px -10px;
+}
+
+/* Banner */
+.experience-banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-image: url('/path-to-your-lg-banner.jpg'); /* fallback for $experienceCardBannerLG */
+  height: 11rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Blurred Layer */
+.experience-blurred_div {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1); /* fallback for $experienceCardBlurredDivLG */
+  filter: blur(5px);
+  height: 11rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Company Name Layer */
+.experience-div-company {
+  position: absolute;
+  background: transparent;
+  height: 9rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Company Name Text */
+.experience-text-company {
+  text-align: center;
+  padding: 1.5rem;
+  margin: 0;
+  color: #ffffff; /* fallback for $lightBackground1 */
+  font-size: 25px;
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Round Image */
+.experience-roundedimg {
+  position: absolute;
+  object-fit: cover;
+  top: 7rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
+  height: 8rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+/* Role */
+.experience-text-role {
+  text-align: center;
+  color: #333; /* fallback for $textColor */
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0;
+  padding-top: 1.5rem;
+  line-height: normal;
+}
+
+.dark-mode-text {
+  color: #f0f0f0 !important; /* fallback for $textColorDark */
+}
+
+/* Date */
+.experience-text-date {
+  text-align: center;
+  color: #555;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 1rem;
+  font-weight: 600;
+}
+
+/* Description Text */
+.experience-text-desc {
+  text-align: center;
+}
+
+/* Details */
+.experience-text-details {
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1380px) {
+  .experience-text-role,
+  .experience-text-company {
+    font-size: 22px;
+  }
+
+  .experience-text-date {
+    font-size: 18px;
+  }
+
+  .experience-roundedimg {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-text-role,
+  .experience-text-company {
+    font-size: 20px;
+  }
+
+  .experience-text-date {
+    font-size: 16px;
+  }
+
+  .experience-text-desc {
+    font-size: 15px;
+    padding: 0 1rem;
+  }
+
+  .experience-text-details {
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .experience-roundedimg {
+    width: 6rem;
+    height: 6rem;
+    top: 6.5rem;
+  }
+
+  .experience-banner,
+  .experience-blurred_div {
+    height: 9rem;
+  }
+
+  .experience-div-company {
+    height: 7rem;
   }
 }
