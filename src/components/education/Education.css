@@ -39,10 +39,10 @@
 /* Root Styles */
 .experience-card {
   position: relative;
-  background-color: #f0f0f0; /* fallback for $lightBackground2 */
+  background-color: #ffffff; /* fallback for $lightBackground2 */
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -15px;
   border-radius: 10px;
-  border: 1px solid #dcdcdc; /* fallback for $lightBorder1 */
+  border: 1px solid #ffffff; /* fallback for $lightBorder1 */
   overflow: hidden;
 }
 
@@ -128,7 +128,7 @@
 }
 
 .dark-mode-text {
-  color: #f0f0f0 !important; /* fallback for $textColorDark */
+  color: #ffffff !important; /* fallback for $textColorDark */
 }
 
 /* Date */

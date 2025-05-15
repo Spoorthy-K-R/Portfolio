@@ -166,14 +166,14 @@ const workExperiences = {
     },
     {
       role: "Software Engineer Intern",
-      company: "JP Morgan Chase & Co.",
+      company: "JP Morgan Chase & Co. - Spring Intern",
       companylogo: require("../assets/images/jpmorganlogo.png"),
       date: "Feb 2023 – May 2023",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       role: "Machine Learning Intern",
-      company: "Bosch Global Software Technologies",
+      company: "Bosch Global Software Technologies - Summer Intern",
       companylogo: require("../assets/images/boschlogo.png"),
       date: "Jun 2022 – Jul 2022",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."

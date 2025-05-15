@@ -72,7 +72,7 @@
   margin-right: 70px; /* Fixed right margin */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1360px) {
   .fixed-side {
     display: none; /* or reposition if you prefer */
   }
