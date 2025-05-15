@@ -358,4 +358,17 @@
   .timeline-container::before {
     left: 20px;
   }
+
+  .timeline-item .timeline-content .timeline-title {
+    margin-top: 20px;
+
+  }
+
+  .timeline-item.right .timeline-date.opposite,
+  .timeline-item.left .timeline-date.opposite{
+    left: 5.5rem;
+    text-align: left;
+    width: 15rem;
+    margin-top: 0.5rem;
+  }
 }
