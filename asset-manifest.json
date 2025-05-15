@@ -1,29 +1,28 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a525e48b.css",
-    "main.js": "/Portfolio/static/js/main.5e8dd05f.js",
+    "main.css": "/Portfolio/static/css/main.17e61e95.css",
+    "main.js": "/Portfolio/static/js/main.6cb9ba92.js",
     "static/css/42.dfe9f122.chunk.css": "/Portfolio/static/css/42.dfe9f122.chunk.css",
     "static/js/42.826ed3a9.chunk.js": "/Portfolio/static/js/42.826ed3a9.chunk.js",
     "static/js/488.307650aa.chunk.js": "/Portfolio/static/js/488.307650aa.chunk.js",
     "static/media/Spoorthy-Resume.pdf": "/Portfolio/static/media/Spoorthy-Resume.eead5a65c4e2f0ee646e.pdf",
+    "static/media/TAMULogo.jpg": "/Portfolio/static/media/TAMULogo.1ee9c678b40eddfc1ebc.jpg",
     "static/media/Agustina.woff": "/Portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
-    "static/media/tamu.png": "/Portfolio/static/media/tamu.5fa147c720c3d64b1dd9.png",
     "static/media/manOnTable.svg": "/Portfolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
     "static/media/jpmorganlogo.png": "/Portfolio/static/media/jpmorganlogo.b7f5f445b5957b98dda4.png",
     "static/media/contactMailDark.svg": "/Portfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
     "static/media/developerActivity.svg": "/Portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
     "static/media/googleAssistantLogo.webp": "/Portfolio/static/media/googleAssistantLogo.f720c71652579588524a.webp",
     "static/media/codeInLogo.webp": "/Portfolio/static/media/codeInLogo.e41a71d512efeda2a55c.webp",
-    "static/media/pwaLogo.webp": "/Portfolio/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
     "index.html": "/Portfolio/index.html",
-    "main.a525e48b.css.map": "/Portfolio/static/css/main.a525e48b.css.map",
-    "main.5e8dd05f.js.map": "/Portfolio/static/js/main.5e8dd05f.js.map",
+    "main.17e61e95.css.map": "/Portfolio/static/css/main.17e61e95.css.map",
+    "main.6cb9ba92.js.map": "/Portfolio/static/js/main.6cb9ba92.js.map",
     "42.dfe9f122.chunk.css.map": "/Portfolio/static/css/42.dfe9f122.chunk.css.map",
     "42.826ed3a9.chunk.js.map": "/Portfolio/static/js/42.826ed3a9.chunk.js.map",
     "488.307650aa.chunk.js.map": "/Portfolio/static/js/488.307650aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a525e48b.css",
-    "static/js/main.5e8dd05f.js"
+    "static/css/main.17e61e95.css",
+    "static/js/main.6cb9ba92.js"
   ]
 }
