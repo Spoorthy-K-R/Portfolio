@@ -112,7 +112,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Texas A&M University",
-      logo: require("../assets/images/TAMULogo.png"),
+      logo: require("../assets/images/tamu.png"),
       subHeader: "Masters Degree in Computer Science",
       duration: "August 2025 - April 2027",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.......................",
@@ -172,7 +172,7 @@ const workExperiences = {
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      role: "ML Intern",
+      role: "Machine Learning Intern",
       company: "Bosch Global Software Technologies",
       companylogo: require("../assets/images/boschlogo.png"),
       date: "Jun 2022 – Jul 2022",

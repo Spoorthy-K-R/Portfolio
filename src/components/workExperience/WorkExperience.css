@@ -1,210 +1,198 @@
-.experience-cards-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1rem 1rem;
+/* :root {
+  font-size: 16px;
 }
 
-.experience-heading {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  overflow-x: hidden;
+  /* font-family: sans-serif; */
+  color: #333;
+}
+
+.education-section {
+  margin: 10px 20px 50px 20px;
+  padding: 0rem 1rem;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.education-heading {
+  text-align: center;
+  margin-bottom: 2rem;
   font-size: 56px;
   font-weight: 400;
 }
 
-.experience-container {
+.education-container {
   display: flex;
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.experience-container > * {
-  flex: 1;
+/* Sidebar: vertical by default */
+.education-sidebar {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
 }
 
-/* Media Query */
-
-@media (max-width: 1380px) {
-  .experience-heading {
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .experience-heading {
-    font-size: 30px;
-    text-align: center;
-  }
-}
-
-/* Root Styles */
-.experience-card,
-.experience-card-dark {
+/* Education list container */
+.education-list {
   position: relative;
-  background-color: #f0f0f0; /* fallback for $lightBackground2 */
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
-  border-radius: 10px;
-  border: 1px solid #dcdcdc; /* fallback for $lightBorder1 */
-  overflow: hidden;
-}
-
-.experience-card-dark {
-  background-color: #1e1e1e; /* fallback for $darkBackground */
-}
-
-.experience-card:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 30px -10px;
-}
-
-/* Banner */
-.experience-banner {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*background-image: url('/path-to-your-lg-banner.jpg'); /* fallback for $experienceCardBannerLG */
-  height: 11rem;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  border-radius: 10px 10px 0 0;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-left: 1.25rem;
 }
 
-/* Blurred Layer */
-.experience-blurred_div {
+.vertical-line {
   position: absolute;
-  background: rgba(255, 255, 255, 0.1); /* fallback for $experienceCardBlurredDivLG */
-  filter: blur(5px);
-  height: 11rem;
+  left: 0.25rem;
   top: 0;
-  left: 0;
-  width: 100%;
-  border-radius: 10px 10px 0 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #c0d3db;
+  border-radius: 2px;
 }
 
-/* Company Name Layer */
-.experience-div-company {
-  position: absolute;
-  background: transparent;
-  height: 9rem;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Company Name Text */
-.experience-text-company {
-  text-align: center;
-  padding: 1.5rem;
-  margin: 0;
-  color: #ffffff; /* fallback for $lightBackground1 */
-  font-size: 25px;
-  font-weight: 700;
-  overflow: hidden;
+/* Sidebar item */
+.education-item {
+  padding: 0.75rem 1rem;
+  background-color: #d7edf6;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  position: relative;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
-/* Round Image */
-.experience-roundedimg {
+.education-item:hover,
+.education-item.active {
+  background-color: #58abd1;
+  color: white;
+}
+
+.education-item.active::before {
+  content: '';
   position: absolute;
-  object-fit: cover;
-  top: 7rem;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 8rem;
-  height: 8rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  left: -1rem;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #58abd1;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+/* Main content */
+.education-details {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.education-details h2 {
+  /* font-size: clamp(1.5rem, 3vw, 2rem); */
+  margin-bottom: 0.5rem;
+}
+
+.education-details h3 {
+  /* font-size: clamp(1.125rem, 2.5vw, 1.5rem); */
+  margin-bottom: 0.25rem;
+  color: #555;
+}
+
+.education-duration {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.education-bullets {
+  /* font-size: clamp(1rem, 2vw, 1.125rem); */
+  color: #444;
+  font-size: medium;
+}
+
+.education-bullets li {
+  margin-bottom: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.education-logo {
+  /* object-fit: cover; */
+  margin-right: 2rem;
+  width: 2rem;
+  height: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(163, 9, 9, 0.25);
   border-radius: 50%;
 }
 
-/* Role */
-.experience-text-role {
-  text-align: center;
-  color: #333; /* fallback for $textColor */
-  font-weight: 700;
-  font-size: 25px;
-  margin: 0;
-  padding-top: 1.5rem;
-  line-height: normal;
-}
-
-.dark-mode-text {
-  color: #f0f0f0 !important; /* fallback for $textColorDark */
-}
-
-/* Date */
-.experience-text-date {
-  text-align: center;
-  color: #555;
-  font-size: 20px;
-  margin: 0;
-  padding-top: 1rem;
-  font-weight: 600;
-}
-
-/* Description Text */
-.experience-text-desc {
-  text-align: center;
-}
-
-/* Details */
-.experience-text-details {
-  padding: 1.5rem;
-  margin-top: 2rem;
-}
-
-@media (max-width: 1380px) {
-  .experience-text-role,
-  .experience-text-company {
-    font-size: 22px;
-  }
-
-  .experience-text-date {
-    font-size: 18px;
-  }
-
-  .experience-roundedimg {
-    width: 6.5rem;
-    height: 6.5rem;
+@media screen and (max-width: 480px) {
+  .education-heading {
+    font-size: 26px;
   }
 }
 
-@media (max-width: 768px) {
-  .experience-text-role,
-  .experience-text-company {
-    font-size: 20px;
+@media screen and (max-width: 769px) {
+  .education-heading {
+    font-size: 30px;
   }
 
-  .experience-text-date {
-    font-size: 16px;
+  .education-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.5rem;
   }
 
-  .experience-text-desc {
-    font-size: 15px;
-    padding: 0 1rem;
+  .education-sidebar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
   }
 
-  .experience-text-details {
-    padding: 1rem;
-    margin-top: 1.5rem;
+  .education-list {
+    flex-direction: row;
+    padding-left: 0;
+    gap: 1rem;
+    position: relative;
   }
 
-  .experience-roundedimg {
-    width: 6rem;
-    height: 6rem;
-    top: 6.5rem;
+  .vertical-line {
+    display: none;
   }
 
-  .experience-banner,
-  .experience-blurred_div {
-    height: 9rem;
+  .education-item {
+    flex-shrink: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
   }
 
-  .experience-div-company {
-    height: 7rem;
+  .education-item.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    background-color: #58abd1;
+  }
+
+  .education-bullets {
+    /* font-size: clamp(1rem, 2vw, 1.125rem); */
+    color: #444;
+    font-size: medium;
   }
 }

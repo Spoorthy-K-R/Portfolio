@@ -1,137 +1,149 @@
+import React, { useState, createRef, useContext} from "react";
 import "./Education.css";
-// import EducationCard from "../../components/educationCard/EducationCard";
 import {educationInfo} from "../portfolio";
-import React, {createRef, useState} from "react";
-import {Fade, Slide} from "react-awesome-reveal";
-import degree from "../../assets/lottie/degree";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
-
+import {Fade} from "react-awesome-reveal";
 // import StyleContext from "../../contexts/StyleContext";
+import ColorThief from "colorthief";
 
-function EducationCard({school}) {
+function ExperienceCard({cardInfo}) {
+  const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
+
+  function getColorArrays() {
+    const colorThief = new ColorThief();
+    setColorArrays(colorThief.getColor(imgRef.current));
+  }
+
+  // const getColorArrays = (imgElement) => {
+  //   Vibrant.from(imgElement)
+  //     .getPalette()
+  //     .then((palette) => {
+  //       const rgb = palette.Vibrant.rgb;
+  //       setColorArrays(`rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`);
+  //     })
+  //     .catch(console.error);
+  // };
+
+  function rgb(values) {
+    return typeof values === "undefined"
+      ? null
+      : "rgb(" + values.join(", ") + ")";
+  }
 
   const GetDescBullets = ({descBullets}) => {
     return descBullets
       ? descBullets.map((item, i) => (
-          <li key={i} className="subTitle">
+          <li
+            key={i}
+            className={"subTitle"}
+          >
             {item}
           </li>
         ))
       : null;
   };
-  // const {isDark} = useContext(StyleContext);
 
-  if (!school.logo)
-    console.error(`Image of ${school.name} is missing in education section`);
   return (
-    <div>
-      <Fade left duration={1000}>
-        <div className="education-card">
-          {school.logo && (
-            <div className="education-card-left">
-              <img
-                crossOrigin={"anonymous"}
-                ref={imgRef}
-                className="education-roundedimg"
-                src={school.logo}
-                alt={school.schoolName}
-              />
-            </div>
-          )}
-          <div className="education-card-right">
-            <h5 className="education-text-school">{school.schoolName}</h5>
-
-            <div className="education-text-details">
-              <h5
-                className={
-                   "education-text-subHeader"
-                }
-              >
-                {school.subHeader}
-              </h5>
-              <p
-                className={`${
-                  ""
-                } education-text-duration`}
-              >
-                {school.duration}
-              </p>
-              <p className="education-text-desc">{school.desc}</p>
-              <div className="education-text-bullets">
-                <ul>
-                  <GetDescBullets descBullets={school.descBullets} />
-                </ul>
-              </div>
-            </div>
-          </div>
+    <div className={ "experience-card"}>
+      <div style={{background: rgb(colorArrays)}} className="experience-banner">
+        <div className="experience-blurred_div"></div>
+        <div className="experience-div-company">
+          <h5 className="experience-text-company">{cardInfo.company}</h5>
         </div>
-      </Fade>
-      <Slide left duration={2000}>
-        <div className="education-card-border"></div>
-      </Slide>
+        <img
+          crossOrigin={"anonymous"}
+          ref={imgRef}
+          className="experience-roundedimg"
+          src={cardInfo.companylogo}
+          alt={cardInfo.company}
+          onLoad={() => getColorArrays()}
+        />
+      </div>
+      <div className="experience-text-details">
+        <h5
+          className={
+             "experience-text-role"
+          }
+        >
+          {cardInfo.role}
+        </h5>
+        <h5
+          className={
+             "experience-text-date"
+          }
+        >
+          {cardInfo.date}
+        </h5>
+        <p
+          className={
+             "subTitle experience-text-desc"
+          }
+        >
+          {cardInfo.desc}
+        </p>
+        <ul>
+          <GetDescBullets descBullets={cardInfo.descBullets}  />
+        </ul>
+      </div>
     </div>
   );
 }
 
-export default function Education() {
+export default function WorkExperience() {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const schools = educationInfo.schools;
+    const schools = educationInfo.schools;
+  if (educationInfo.display) {
     return (
-      <div className="education-section"> 
-      <h1 className="education-heading">Education</h1>
-      <div className="education-container">
-        <div className="education-sidebar">
-            <div className="education-list">
-              <div className="vertical-line" />
-              {schools.map((school, index) => (
-                <div
-                  key={index}
-                  onClick={() => setSelectedIndex(index)}
-                  className={`education-item ${index === selectedIndex ? "active" : ""}`}
-                >
-                  {school.schoolName}
+      <div id="experience">
+        <Fade bottom duration={1000} distance="20px">
+          <div className="experience-container" id="education">
+            <div>
+              <h1 className="experience-heading">Education</h1>
+              <div className="experience-cards-div">
+                
+                {/* <div className="education-details">
+                  <h2>{experience[selectedIndex].company}</h2>
+                  <h3>{experience[selectedIndex].role}</h3>
+                  <p className="education-duration">{experience[selectedIndex].date}</p>
+                  {experience[selectedIndex].desc && <p className="education-bullets">{experience[selectedIndex].desc}</p>}
                 </div>
-              ))}
+                <div className="education-sidebar">
+                  <div className="education-list">
+                    <div className="vertical-line" />
+                    {workExperiences.experience.map((card, index) => (
+                      <div
+                        key={index}
+                        onClick={() => setSelectedIndex(index)}
+                        className={`education-item ${index === selectedIndex ? "active" : ""}`}
+                      >
+                        {card.company}
+                      </div>
+                    ))}
+                  </div>
+                </div> */}
+                
+                {schools.map((card, i) => {
+                  return (
+                    <ExperienceCard
+                      key={i}
+                      // isDark={isDark}
+                      cardInfo={{
+                        company: card.schoolName,
+                        desc: card.desc,
+                        date: card.duration,
+                        companylogo: card.logo,
+                        role: card.subHeader,
+                        descBullets: card.descBullets
+                      }}
+                    />
+                  );
+                })}
+              </div>
             </div>
           </div>
-          <div className="education-details">
-            <h2>{schools[selectedIndex].schoolName}</h2>
-            <h3>{schools[selectedIndex].subHeader}</h3>
-            <p className="education-duration">{schools[selectedIndex].duration}</p>
-            {schools[selectedIndex].desc && <p className="education-bullets">{schools[selectedIndex].desc}</p>}
-            {schools[selectedIndex].descBullets.length > 0 && (
-              <p className="education-bullets">
-                {schools[selectedIndex].descBullets.map((bullet, i) => (
-                  <li key={i}>{bullet}</li>
-                ))}
-              </p>
-            )}
-          </div>
-        </div>
+        </Fade>
       </div>
-
-    //   <div className="education-content">
-    //   <div className="education-card-container">
-    //     {educationInfo.schools.map((school, index) => (
-    //       <EducationCard key={index} school={school} />
-    //     ))}
-    //   </div>
-    //   <div className="education-animation">
-    //     <DisplayLottie animationData={degree} />
-    //   </div>
-    // </div>
-
-
-    // <section className="education-section"> 
-    //   <h1 className="education-heading">Education</h1>
-    //   <div className="education-content" id="education">
-    //     <div className="education-card-container">
-    //       {educationInfo.schools.map((school, index) => (
-    //         <EducationCard key={index} school={school} />
-    //       ))}
-    //     </div>
-    //   </div>
-    //   </section>
-)
+    );
+  }
+  return null;
 }
