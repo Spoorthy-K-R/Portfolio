@@ -129,7 +129,7 @@
   }
 
   .greeting-text {
-    font-size: large !important;
+    font-size:x-large !important;
     text-align: center; /* Center text for mobile screens */
   }
 
