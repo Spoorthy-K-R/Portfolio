@@ -152,6 +152,63 @@ const techStack = {
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
+const bigProjects = {
+  title: "Big Projects",
+  projects: [
+    {
+      // image: require("./assets/images/saayaHealthLogo.webp"),
+      id: 1,
+      projectName: "Saayahealth",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://saayahealth.com/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      // image: require("./assets/images/nextuLogo.webp"),
+      id: 2,
+      projectName: "Nextu",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://nextu.se/"
+        }
+      ]
+    },
+    {
+      // image: require("./assets/images/nextuLogo.webp"),
+      id: 3,
+      projectName: "Nextu",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://nextu.se/"
+        }
+      ]
+    },
+    {
+      // image: require("./assets/images/saayaHealthLogo.webp"),
+      id: 4,
+      projectName: "Saayahealth",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://saayahealth.com/"
+        }
+        //  you can add extra buttons here.
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
 // Work experience section
 
 const workExperiences = {
@@ -189,38 +246,6 @@ const openSource = {
   display: true // Set false to hide this section, defaults to true
 };
 
-// Some big projects you have worked on
-
-// const bigProjects = {
-//   title: "Big Projects",
-//   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-//   projects: [
-//     {
-//       image: require("./assets/images/saayaHealthLogo.webp"),
-//       projectName: "Saayahealth",
-//       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-//       footerLink: [
-//         {
-//           name: "Visit Website",
-//           url: "http://saayahealth.com/"
-//         }
-//         //  you can add extra buttons here.
-//       ]
-//     },
-//     {
-//       image: require("./assets/images/nextuLogo.webp"),
-//       projectName: "Nextu",
-//       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-//       footerLink: [
-//         {
-//           name: "Visit Website",
-//           url: "http://nextu.se/"
-//         }
-//       ]
-//     }
-//   ],
-//   display: true // Set false to hide this section, defaults to true
-// };
 
 // Achievement Section
 // Include certificates, talks etc
@@ -299,7 +324,7 @@ export {
   techStack,
   workExperiences,
   openSource,
-  // bigProjects,
+  bigProjects,
   achievementSection,
   // blogSection,
   // talkSection,

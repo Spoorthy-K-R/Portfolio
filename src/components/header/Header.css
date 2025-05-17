@@ -170,6 +170,8 @@
   }
   .header .menu {
     max-height: none;
+    /* display: flex;
+    justify-content: space-between; */
   }
   .header .menu-icon {
     display: none;

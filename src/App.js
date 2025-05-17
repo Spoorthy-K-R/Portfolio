@@ -7,7 +7,7 @@ import Main from "./containers/Main";
 function App() {
   return (
     <div className="App">
-      <LinearBuffer/>
+      {/* <LinearBuffer/> */}
 
       {/* <div className="fixed-side left"> */}
         {/* <div className="fixed-side-content"> */}
