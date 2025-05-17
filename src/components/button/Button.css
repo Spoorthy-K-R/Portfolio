@@ -1,6 +1,6 @@
 .main-button {
-  background-color: #55198b;
-  border: solid 1px #55198b;
+  background-color: #6fafdc;
+  border: solid 1px #6fafdc;
   color: #ffffff;
   font-weight: 700;
   width: max-content;
@@ -27,7 +27,7 @@
 .project-button {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 10rem;
 }
 
 .project-button > .main-button {

@@ -14,7 +14,7 @@
   position: absolute;
   top: 0;
   /* left: 70%; */
-  width: 18rem;
+  width: 20rem;
   height: 27rem;
   background: white;
   border-radius: 1rem;
@@ -43,7 +43,8 @@
 
 .stack-card p {
   font-size: 1rem;
-  color: #555;
+  font-weight: 600;
+  color: #242323;
   text-align: center;
   padding: 0 1rem;
 }
@@ -78,6 +79,28 @@
   right: 2rem;
 }
 
+.lottie-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* so clicks pass through */
+  z-index: 1;
+  border-radius: 1rem; /* match your card rounding */
+  overflow: hidden;
+  opacity: 0.50; /* control visibility */
+}
+
+/* Card content should be above Lottie */
+.stack-card > h2,
+.stack-card > p,
+.stack-card > .project-button {
+  position: relative;
+  z-index: 2;
+}
+
+
 /* Slide animations */
 @keyframes slideOutLeft {
   from {
@@ -102,11 +125,11 @@
 }
 
 .slide-left {
-  animation: slideOutLeft 0.4s forwards;
+  animation: slideOutLeft 0.05s ease forwards;
 }
 
 .slide-right {
-  animation: slideOutRight 0.4s forwards;
+  animation: slideOutRight 0.05s ease forwards;
 }
 
 @media (max-width: 768px) {
@@ -149,6 +172,20 @@
     overflow: hidden;
   }
 
+  .stack-card h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .stack-card p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #242323;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
   /* .stack-wrapper {
     width: 20rem;
     height: 28rem;
@@ -156,7 +193,7 @@
 
   .stack-card {
     width: 60%;
-    height: 80%;
+    height: 90%;
   }
 
   .nav-arrow {

@@ -3,6 +3,11 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
+import brainAnimation from "../assets/lottie/brain1";
+import movieAnimation from "../assets/lottie/movie";
+import studentAnimation from "../assets/lottie/student";
+import signal from "../assets/lottie/signal"; 
+import splitSignal from "../assets/lottie/splitSignal"; 
 // import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 // // Splash Screen
@@ -158,52 +163,47 @@ const bigProjects = {
     {
       // image: require("./assets/images/saayaHealthLogo.webp"),
       id: 1,
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
+      projectName: "DeepNOMA",
+      projectDesc: "A Deep Learning Approach for Signal Detection in Non-Orthogonal Multiple Access Systems",
+      
+      repoLink: "https://github.com/Spoorthy-K-R/Deep-Learning-for-Signal-Detection-in-NOMA-systems",
+      lottie: signal
     },
     {
-      // image: require("./assets/images/nextuLogo.webp"),
+      // image: require("./assets/images/saayaHealthLogo.webp"),
       id: 2,
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
+      projectName: "Genomage",
+      projectDesc: "A Deep Learning Framework for Radiogenomic Classification of Brain Tumors",
+      
+      repoLink: "https://github.com/Spoorthy-K-R/Deep-Learning-based-approach-for-Radiogenomic-Classification-of-Brain-Tumor",
+      lottie: brainAnimation
     },
     {
       // image: require("./assets/images/nextuLogo.webp"),
       id: 3,
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
+      projectName: "Sobus",
+      projectDesc: "A platform that streamlines data-driven matchmaking between skilled job seekers, entrepreneurs, and potential investors or companies.",
+    
+      repoLink: "https://github.com/Spoorthy-K-R/NGO-website-cfg",
+      lottie: studentAnimation
+    },
+    {
+      // image: require("./assets/images/nextuLogo.webp"),
+      id: 4,
+      projectName: "DL-RSMA",
+      projectDesc: "A deep learning-based framework to optimize resource allocation and signal decoding in Rate-Splitting Multiple Access (RSMA) systems.",
+      
+      repoLink: "https://github.com/Spoorthy-K-R/Deep-Learning-for-RSMA",
+      lottie: splitSignal
     },
     {
       // image: require("./assets/images/saayaHealthLogo.webp"),
-      id: 4,
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
+      id: 5,
+      projectName: "Movie Recommender System",
+      projectDesc: "A recommender system using collaborative filtering to generate personalized suggestions based on user preferences and behavior.",
+    
+      repoLink: "https://github.com/Spoorthy-K-R/Deep-Learning-for-detection-of-Cognitive-Impairment",
+      lottie: movieAnimation
     }
   ],
   display: true // Set false to hide this section, defaults to true

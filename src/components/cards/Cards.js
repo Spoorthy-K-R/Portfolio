@@ -1,6 +1,9 @@
 import React, { useState, useRef } from "react";
 import "./Cards.css";
 import {bigProjects} from "../portfolio";
+import Button from "../button/Button";
+import backgroundAnimation from "../../assets/lottie/brain1";
+import Lottie from "lottie-react";
 
 const cards = bigProjects.projects;
 // [
@@ -108,15 +111,25 @@ export default function HorizontalSwipeStack() {
                 style={{
                   transform: `translateX(${translateX}px) scale(${scale})`,
                   zIndex,
-                  opacity: offset === 0 ? 1 : 0.8,
+                  opacity: offset === 0 ? 1 : 0.6,
                   pointerEvents: offset === 0 ? "auto" : "none",
                 }}
                 onAnimationEnd={i === activeIndex ? handleAnimationEnd : undefined}
                 onTouchStart={i === activeIndex ? handleTouchStart : undefined}
                 onTouchEnd={i === activeIndex ? handleTouchEnd : undefined}
               >
+
+              <div className="lottie-background">
+                <Lottie 
+                  animationData={card.lottie} 
+                  loop={true} 
+                  autoplay={true} 
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </div>
                 <h2>{card.projectName}</h2>
                 <p>{card.projectDesc}</p>
+                <Button text="Project Link" href={card.repoLink} className="project-button" />
               </div>
             );
           })}
