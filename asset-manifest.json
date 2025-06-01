@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.dc963630.css",
-    "main.js": "/Portfolio/static/js/main.6d057436.js",
+    "main.css": "/Portfolio/static/css/main.c3622d3c.css",
+    "main.js": "/Portfolio/static/js/main.1f09bf85.js",
     "static/css/42.a3f9abb8.chunk.css": "/Portfolio/static/css/42.a3f9abb8.chunk.css",
     "static/js/42.5eb2435c.chunk.js": "/Portfolio/static/js/42.5eb2435c.chunk.js",
     "static/js/488.307650aa.chunk.js": "/Portfolio/static/js/488.307650aa.chunk.js",
@@ -14,14 +14,14 @@
     "static/media/googleAssistantLogo.webp": "/Portfolio/static/media/googleAssistantLogo.f720c71652579588524a.webp",
     "static/media/codeInLogo.webp": "/Portfolio/static/media/codeInLogo.e41a71d512efeda2a55c.webp",
     "index.html": "/Portfolio/index.html",
-    "main.dc963630.css.map": "/Portfolio/static/css/main.dc963630.css.map",
-    "main.6d057436.js.map": "/Portfolio/static/js/main.6d057436.js.map",
+    "main.c3622d3c.css.map": "/Portfolio/static/css/main.c3622d3c.css.map",
+    "main.1f09bf85.js.map": "/Portfolio/static/js/main.1f09bf85.js.map",
     "42.a3f9abb8.chunk.css.map": "/Portfolio/static/css/42.a3f9abb8.chunk.css.map",
     "42.5eb2435c.chunk.js.map": "/Portfolio/static/js/42.5eb2435c.chunk.js.map",
     "488.307650aa.chunk.js.map": "/Portfolio/static/js/488.307650aa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc963630.css",
-    "static/js/main.6d057436.js"
+    "static/css/main.c3622d3c.css",
+    "static/js/main.1f09bf85.js"
   ]
 }
