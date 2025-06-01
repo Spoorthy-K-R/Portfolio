@@ -61,7 +61,7 @@ export default function HorizontalSwipeStack() {
   };
 
   return (
-    <div className="stack-container">
+    <div className="stack-container" id="projects">
       <h1 className="stack-title">Projects  &  Publications</h1>
         <div className="stack-wrapper">
         <button
