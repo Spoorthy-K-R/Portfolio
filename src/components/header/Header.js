@@ -53,12 +53,12 @@ function Header() {
     )} */}
     {viewExperience && (
       <li>
-      <a href="#experience">Work Experiences</a>
+      <a href="#experience">Work Experience</a>
       </li>
     )}
     {viewOpenSource && (
       <li>
-      <a href="#contact">GitHub</a>
+      <a href="#contact">Projects</a>
       </li>
     )}
     {viewAchievement && (
@@ -66,11 +66,11 @@ function Header() {
       <a href="#achievements">Achievements</a>
       </li>
     )}
-    {viewResume && (
+    {/* {viewResume && (
       <li>
       <a href="#resume">Resume</a>
       </li>
-    )}
+    )} */}
     <li>
     <a href="#contact">Contact Me</a>
     </li>

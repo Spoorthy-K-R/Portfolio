@@ -1,11 +1,11 @@
 .profile-image {
   border-radius: 50%;
-  border: 0.3rem solid #78abee; /* Replace with your intended githubProfileCardBorder color */
+  border: 0.3rem solid #eff1f5; /* Replace with your intended githubProfileCardBorder color */
   margin-left: auto;
   width: 100%;
   max-width: 350px;
   height: auto;
-  box-shadow: 0 0.5rem 1rem rgba(28, 75, 228, 0.25); /* assumed $lightBoxShadowDarker */
+  box-shadow: 0 0.5rem 1rem rgba(95, 96, 101, 0.25); /* assumed $lightBoxShadowDarker */
   transition: all 0.3s ease-out;
 }
 
@@ -111,7 +111,7 @@
     width: 100%;
     max-width: 250px;
     height: auto;
-    box-shadow: 0 0.5rem 1rem rgba(28, 75, 228, 0.25); /* assumed $lightBoxShadowDarker */
+    box-shadow: 0 0.5rem 1rem rgba(95, 96, 101, 0.25); /* assumed $lightBoxShadowDarker */
   }
 
   .profile-image:hover {

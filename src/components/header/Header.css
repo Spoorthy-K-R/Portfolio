@@ -82,10 +82,9 @@
 
 .header .menu-icon {
   cursor: pointer;
-  display: inline-block;
-  /* float: right; */
+  display: none;
   padding: 28px 20px;
-  position:relative;
+  position: relative;
   user-select: none;
 }
 
@@ -167,11 +166,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 5px 2px;
   }
   .header .menu {
     max-height: none;
-    /* display: flex;
-    justify-content: space-between; */
+    display: flex;
+    align-items: center;
   }
   .header .menu-icon {
     display: none;
@@ -180,7 +180,8 @@
 
 @media (max-width: 768px) {
   .header {
-    font-size: medium;
+    padding: 15px;
+    position: relative;
   }
 
   .header .menu-icon {

@@ -101,8 +101,13 @@
 /* For tablets and below (up to 1380px) */
 @media (max-width: 1380px) {
   .greeting-text {
-    font-size: large !important;
-    text-align: center; /* Center text for smaller screens */
+    font-size: 60px !important;
+    text-align: center;
+  }
+
+  .greeting-java {
+    font-size: 32px;
+    text-align: center;
   }
 
   .greeting-text-p {
@@ -121,20 +126,21 @@
 }
 
 @media (max-width: 768px) {
+  .greeting-text {
+    font-size: 48px !important;
+    text-align: center;
+  }
+
+  .greeting-java {
+    font-size: 18px;
+    text-align: center;
+  }
+
   .button-greeting-div {
     justify-content: center; /* Center buttons */
     flex-wrap: wrap; /* Allow buttons to stack on mobile */
     margin-left: 10px;
     margin-right: 10px;
-  }
-
-  .greeting-text {
-    font-size:x-large !important;
-    text-align: center; /* Center text for mobile screens */
-  }
-
-  .greeting-java {
-    font-size: 20px;
   }
 
   .greeting-text-p {
@@ -163,7 +169,7 @@
   }
 
   .greeting-text {
-    font-size: 28px;
+    font-size: 36px !important;
   }
 
   .greeting-text-p {
@@ -171,6 +177,6 @@
   }
 
   .greeting-java {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
