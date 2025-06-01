@@ -45,7 +45,7 @@
   width: 40px;
   z-index: 1000;
   background-color: #d7edf6; /* or a subtle background */
-  pointer-events: none; /* ensures it doesn’t block interactions */
+  pointer-events: none; /* ensures it doesn't block interactions */
 }
 
 .fixed-side.left {
@@ -65,6 +65,18 @@
   text-align: center;
   color: #120da0;
   pointer-events: auto; /* enable interaction for inner content */
+}
+
+.fixed-side-content::after {
+  content: '';
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 200vh;
+  background-color: #120da0;
+  opacity: 0.5;
 }
 
 .main-wrapper {
