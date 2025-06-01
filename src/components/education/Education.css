@@ -24,9 +24,6 @@
 /* Media Query */
 
 @media (max-width: 1380px) {
-  .experience-heading {
-    font-size: 40px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -336,7 +333,7 @@
 }
 
 /* Responsive for small screens */
-@media screen and (max-width: 768px) {
+@media screen and ((max-width: 768px) or (min-width: 1025px)) {
   .timeline-item {
     width: 100%;
     padding-left: 70px;

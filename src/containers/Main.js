@@ -39,15 +39,15 @@ const Main = () => {
   // };
 
   return (
-
-    
     <div className="main-container">
       <Header />        
       <Greeting />
-      <Skills />
+      <div className="skills-education-container">
+        <Skills />
+        <Education />
+      </div>
       {/* <StackProgress /> */}
       <WorkExperience />
-      <Education />
       <HorizontalSwipeStack/>
       {/* <Achievement /> */}
       <Profile/>

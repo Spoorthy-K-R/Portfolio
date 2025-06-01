@@ -7,3 +7,26 @@
 .main-container {
   background-color: #d7edf6;
 }
+
+.skills-education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 1025px) {
+  .skills-education-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .skills-education-container > * {
+    flex: 1;
+    margin: 0;
+  }
+}

@@ -46,11 +46,11 @@ function Header() {
     <span className={"navicon"}></span>
     </label>
     <ul className={ "menu"}>
-    {viewSkills && (
+    {/* {viewSkills && (
       <li>
       <a href="#skills">Skills</a>
       </li>
-    )}
+    )} */}
     {viewExperience && (
       <li>
       <a href="#experience">Work Experiences</a>

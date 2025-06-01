@@ -29,7 +29,7 @@ const greeting = {
   java: "print(\"Hello World\")",
   title: "I'm Spoorthy",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 👩🏻‍💻 with experience in building backend systems using Java / Spring Boot and responsive UI with JavaScript / React.js. Passionate about AI, I’m eager to apply my skills to create meaningful impact."
+    "A passionate Full Stack Software Developer 👩🏻‍💻 with experience in building backend systems using Java / Spring Boot and responsive UI with JavaScript / React.js. Passionate about AI, I'm eager to apply my skills to create meaningful impact."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -79,7 +79,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "sql-database",
+      skillName: "SQL",
       fontAwesomeClassname: "fas fa-database"
     },
     {
@@ -87,24 +87,24 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-jenkins"
     },
     {
-      skillName: "html-5",
+      skillName: "HTML-5",
       fontAwesomeClassname: "fab fa-html5"
     },
     {
-      skillName: "css3",
+      skillName: "CSS",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
+      skillName: "ReactJS",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "docker",
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "Kubernetes",
+      fontAwesomeClassname: "fas fa-dharmachakra"
     }
   ],
   display: true // Set false to hide this section, defaults to true
