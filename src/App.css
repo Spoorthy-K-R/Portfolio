@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #d7edf6;
+  background-color: #d7edf608;
 }
 
 .App-logo {
@@ -15,7 +15,7 @@
 } */
 
 .App-header {
-  background-color: #000000;
+  background-color: #00000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -44,8 +44,8 @@
   bottom: 0;
   width: 40px;
   z-index: 1000;
-  background-color: #d7edf6; /* or a subtle background */
-  pointer-events: none; /* ensures it doesn't block interactions */
+  background-color: rgba(215, 237, 246, 0); /* Make it slightly transparent */
+  pointer-events: none;
 }
 
 .fixed-side.left {

@@ -111,7 +111,7 @@ export default function HorizontalSwipeStack() {
                 style={{
                   transform: `translateX(${translateX}px) scale(${scale})`,
                   zIndex,
-                  opacity: offset === 0 ? 1 : 0.4,
+                  opacity: offset === 0 ? 1.15 : 0.25,
                   pointerEvents: offset === 0 ? "auto" : "none",
                 }}
                 onAnimationEnd={i === activeIndex ? handleAnimationEnd : undefined}

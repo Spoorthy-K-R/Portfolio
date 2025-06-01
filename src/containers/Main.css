@@ -1,11 +1,11 @@
 .dark-mode {
-  background-color: #0d1117; /* Example dark background */
+  background-color: #0d111704; /* Example dark background */
   color: white;
   transition: background-color 0.1s, color 0.1s;
 }
 
 .main-container {
-  background-color: #d7edf6;
+  background-color: #d7edf600;
 }
 
 .skills-education-container {

@@ -28,13 +28,13 @@
 }
 
 .subTitle {
-  color: #6c757d; /* Replace with actual value from _globalColor */
+  color: #494f54 /* Replace with actual value from _globalColor */
 }
 
 .skills-text {
   font-size: 24px;
   text-align: left;
-  color: #6c757d;
+  color: #494f54;
 }
 
 /* Media Query for large screens up to 1380px */
@@ -150,7 +150,7 @@
 }
 
 .software-skill-inline > i {
-  color: #6c757d; /* Replace with the actual color value of $subTitle */
+  color: #494f54; /* Replace with the actual color value of $subTitle */
 }
 
 .software-skill-inline > i:hover {
@@ -158,7 +158,7 @@
 }
 
 .software-skill-inline > p {
-  color: #6c757d; /* Replace with the actual color value of $subTitle */
+  color: #494f54; /* Replace with the actual color value of $subTitle */
   font-size: 10px;
 }
 

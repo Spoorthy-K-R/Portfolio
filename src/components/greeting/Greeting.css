@@ -1,6 +1,6 @@
 /* Container & Main Layout */
 .greeting-container {
-  background-color: #d7edf6;
+  background-color: rgba(245, 245, 245, 0);
   padding: 2rem 0rem; /* Adjust padding for smaller screens */
 }
 

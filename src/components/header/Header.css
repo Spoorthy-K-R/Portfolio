@@ -6,8 +6,10 @@
 /* header */
 
 .dark-menu {
-  background-color: #0d1117 !important; /* dark background */
+  background-color: rgba(13, 17, 23, 0.8) !important; /* dark background with transparency */
   color: #ffffff;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .dark-menu li a {
@@ -19,10 +21,13 @@
 }
 
 .header {
-  background-color: #d7edf6; /* light background */
+  background-color: rgba(245, 245, 245, 0); /* light background with transparency */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   max-width: 100%;
   padding: 1rem 1.5rem 0 4rem;
   margin: 0px auto;
+  transition: background-color 0.3s ease;
 }
 
 .header ul {
@@ -41,11 +46,12 @@
   padding: 15px 20px;
   color: #212529;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #e0e0e0; /* hover background */
+  background-color: rgba(224, 224, 224, 0.5); /* transparent hover background */
 }
 
 .header .logo {
@@ -89,16 +95,16 @@
 }
 
 .header .menu-icon .navicon {
-  background: #212529; /* icon background */
+  background: #212529;
   display: block;
   height: 2px;
   position: relative;
-  transition: background 0.2s ease-out;
+  transition: all 0.2s ease-out;
   width: 18px;
 }
 
 .header .menu-icon .navicon-dark {
-  background: #ffffff;
+  background: #ffffff04;
 }
 
 .header .menu-icon .navicon:before,
@@ -114,7 +120,7 @@
 
 .header .menu-icon .navicon-dark:before,
 .header .menu-icon .navicon-dark:after {
-  background: #ffffff !important;
+  background: #ffffff06 !important;
   content: "";
   display: block;
   height: 100%;
@@ -180,6 +186,7 @@
 
 @media (max-width: 768px) {
   .header {
+    background-color: rgba(215, 237, 246, 0.052); /* slightly more opaque on mobile */
     padding: 15px;
     position: relative;
   }

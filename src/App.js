@@ -1,5 +1,6 @@
 // import logo from './assets/images/woman-with-laptop.webp';
 import './App.css';
+import './styles/global.css';
 import * as React from 'react';
 import LinearBuffer from './components/Loader.js';
 import Main from "./containers/Main";
@@ -8,7 +9,7 @@ import {socialMediaLinks} from "./components/portfolio";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App content-overlay">
       {/* <LinearBuffer/> */}
       <Header />
 

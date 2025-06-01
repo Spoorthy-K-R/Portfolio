@@ -1,0 +1,50 @@
+:root {
+  --background-opacity: 0.10;  /* Adjust this value to control background image opacity */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 2rem;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/background/bgg1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: var(--background-opacity);
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(20%) contrast(1.1) brightness(1.1); /* Added grayscale with slight contrast and brightness adjustment */
+  -webkit-filter: grayscale(20%) contrast(1.1) brightness(1.1); /* For Safari support */
+}
+
+/* Ensure content is above the background */
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional: Add a subtle overlay to improve text readability */
+.content-overlay {
+  position: relative;
+}
+
+.content-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(159, 163, 164, 0.279);  /* Adjust color and opacity as needed */
+  z-index: -1;
+} 
