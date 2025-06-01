@@ -162,13 +162,15 @@ const bigProjects = {
   title: "Big Projects",
   projects: [
     {
-      // image: require("./assets/images/saayaHealthLogo.webp"),
+      // image: require("./assets/images/nextuLogo.webp"),
       id: 1,
-      projectName: "Deep Learning for NOMA",
-      projectDesc: "A Deep Learning Approach for Signal Detection in Non-Orthogonal Multiple Access Systems",
+      projectName: "Deep Learning for RSMA",
+      projectDesc: "A deep learning-based framework to optimize resource allocation and signal decoding in Rate-Splitting Multiple Access (RSMA) systems.",
       
-      repoLink: "https://github.com/Spoorthy-K-R/Deep-Learning-for-Signal-Detection-in-NOMA-systems",
-      lottie: signal
+      repoLink: "https://github.com/Spoorthy-K-R/Deep-Learning-for-RSMA",
+      publicationLink: "https://ieeexplore.ieee.org/document/10068068",
+      conference: "2023 National Conference on Communications (NCC)",
+      lottie: splitSignal
     },
     {
       // image: require("./assets/images/saayaHealthLogo.webp"),
@@ -182,6 +184,15 @@ const bigProjects = {
       lottie: brainAnimation
     },
     {
+      // image: require("./assets/images/saayaHealthLogo.webp"),
+      id: 4,
+      projectName: "Deep Learning for NOMA",
+      projectDesc: "A Deep Learning Approach for Signal Detection in Non-Orthogonal Multiple Access Systems",
+      
+      repoLink: "https://github.com/Spoorthy-K-R/Deep-Learning-for-Signal-Detection-in-NOMA-systems",
+      lottie: signal
+    },
+    {
       // image: require("./assets/images/nextuLogo.webp"),
       id: 3,
       projectName: "Sobus",
@@ -189,17 +200,6 @@ const bigProjects = {
     
       repoLink: "https://github.com/Spoorthy-K-R/NGO-website-cfg",
       lottie: studentAnimation
-    },
-    {
-      // image: require("./assets/images/nextuLogo.webp"),
-      id: 4,
-      projectName: "Deep Learning for RSMA",
-      projectDesc: "A deep learning-based framework to optimize resource allocation and signal decoding in Rate-Splitting Multiple Access (RSMA) systems.",
-      
-      repoLink: "https://github.com/Spoorthy-K-R/Deep-Learning-for-RSMA",
-      publicationLink: "https://ieeexplore.ieee.org/document/10068068",
-      conference: "2023 National Conference on Communications (NCC)",
-      lottie: splitSignal
     },
     {
       // image: require("./assets/images/saayaHealthLogo.webp"),
