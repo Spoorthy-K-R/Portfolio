@@ -140,9 +140,9 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "PES University",
+      schoolName: "PES University (CGPA 9.68/10)",
       logo: require("../assets/images/PESLogo.png"),
-      subHeader: "B.Tech Electronics and Communication Engineering 9.68/10",
+      subHeader: "B.Tech Electronics and Communication Engineering",
       duration: "August 2019 - May 2023",
       desc: "",
       descBullets: ["Gold Medalist",
