@@ -43,6 +43,7 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/spoorthy-k-r-1801/",
   gmail: "spoorthykr1801@gmail.com",
   medium: "https://medium.com/@spoorthykr1801",
+  instagram: "https://www.instagram.com/spoorthy_1801/",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false

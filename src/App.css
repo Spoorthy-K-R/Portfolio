@@ -49,11 +49,11 @@
 }
 
 .fixed-side.left {
-  left: 0;
+  left: 1rem;
 }
 
 .fixed-side.right {
-  right: 0;
+  right: 0rem;
 }
 
 .fixed-side-content {
@@ -80,8 +80,8 @@
 }
 
 .main-wrapper {
-  margin-left: 70px; /* Fixed left margin */
-  margin-right: 70px; /* Fixed right margin */
+  margin-left: 5rem; /* Fixed left margin */
+  margin-right: 3rem; /* Fixed right margin */
 }
 
 @media (max-width: 768px) {
