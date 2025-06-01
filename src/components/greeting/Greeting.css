@@ -144,8 +144,8 @@
     font-size: large !important;
     line-height: normal;
     text-align: left; /* Center text */
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1.25rem;
+    margin-right: 0.5rem;
   }
 
   .greeting-main {
