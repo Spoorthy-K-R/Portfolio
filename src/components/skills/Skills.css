@@ -10,9 +10,7 @@
 
 .skills-text-div {
   margin-left: 10px;
-  margin-right: 65px; /* <-- Add this */
-  /* Or use max-width if you want a stricter width limit */
-  /* max-width: 600px; */
+  margin-right: 65px; 
 }
 
 .skills-main-div > * {
@@ -58,12 +56,12 @@
 
   .skills-text-div {
     order: 1; /* Ensure text comes after the image */
-    width: 100%; /* Optional: Ensure full width for text section */
+    width: 98%; /* Optional: Ensure full width for text section */
   }
 
   .skills-text {
     font-size: large !important;
-    text-align: center; /* Center text for mobile/tablet view */
+    text-align: justify; /* Center text for mobile/tablet view */
   }
 
   .skills-text-subtitle {
@@ -88,13 +86,13 @@
   .skills-text-div {
     order: 1;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 0px;
     font-size: 16px;
   }
 
   .skills-text {
     font-size: medium;
-    text-align: center; /* Center text for mobile view */
+    text-align: justify; /* Center text for mobile view */
   }
 
   .skills-text-subtitle {
@@ -113,6 +111,7 @@
 
   .skills-text {
     font-size: medium;
+    text-align: left;
   }
 
   .software-skill-inline > i {
@@ -125,7 +124,7 @@
 
   .skills-text-div {
     margin-top: 15px;
-    margin-left: 0px;
+    /* margin-left: 0px; */
     padding: 0 10px;
   }
 
