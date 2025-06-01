@@ -40,7 +40,7 @@ const Main = () => {
 
   return (
     <div className="main-container">
-      <Header />        
+      {/* <Header />         */}
       <Greeting />
       <div className="skills-education-container">
         <Skills/>

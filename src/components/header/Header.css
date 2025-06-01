@@ -21,7 +21,7 @@
 .header {
   background-color: #d7edf6; /* light background */
   max-width: 100%;
-  padding: 15px 20px;
+  padding: 1rem 1.5rem 0 4rem;
   margin: 0px auto;
 }
 

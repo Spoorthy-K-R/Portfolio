@@ -3,12 +3,14 @@ import './App.css';
 import * as React from 'react';
 import LinearBuffer from './components/Loader.js';
 import Main from "./containers/Main";
+import Header from "./components/header/Header";
 import {socialMediaLinks} from "./components/portfolio";
 
 function App() {
   return (
     <div className="App">
       {/* <LinearBuffer/> */}
+      <Header />
 
       <div className="fixed-side left">
         <div className="fixed-side-content">
