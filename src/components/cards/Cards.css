@@ -51,14 +51,14 @@
 
 /* Arrow buttons */
 .nav-arrow {
-  position: absolute;
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
-  background: #eee;
+  background: #eeeeee12;
   border: none;
   font-size: 2rem;
-  width: 2.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 4rem;
   cursor: pointer;
   border-radius: 0.5rem;
   user-select: none;
@@ -72,11 +72,11 @@
 }
 
 .left-arrow {
-  left: 2rem;
+  left: -17rem;
 }
 
 .right-arrow {
-  right: 2rem;
+  right: -17rem;
 }
 
 .lottie-background {
@@ -172,6 +172,14 @@
     overflow: hidden;
   }
 
+  .left-arrow {
+    left: -12rem;
+  }
+  
+  .right-arrow {
+    right: -12rem;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -209,12 +217,13 @@
     font-size: 1.8rem;
   }
 
-  /*.left-arrow {
-    left: 4rem;
+  .left-arrow {
+    left: -9rem;
+  }
+  
+  .right-arrow {
+    right: -9rem;
   }
 
-  .right-arrow {
-    right: -4rem;
-  } */
 }
 
