@@ -66,7 +66,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "SOFTWARE DEVELOPER WHO IS INTO AI",
+  subTitle: "SOFTWARE ENGINEER TURNED CS GRAD, EXPLORING THE WORLD OF AI",
   skills: [
     emoji(
       "⪼ Develop robust microservices using Spring Boot, MQ and Kafka for high-performance and scalable applications"

@@ -110,18 +110,15 @@
     text-align: center;
   }
 
-  .greeting-text-p {
-    font-size: large !important;
-    text-align: center; /* Center text for smaller screens */
-    padding-left: 20px; /* Add padding here if needed */
-    padding-right: 20px; /* Add padding here if needed */
+  .button-greeting-div {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
-  .button-greeting-div {
-    justify-content: center; /* Center buttons */
-    flex-wrap: wrap; /* Allow buttons to stack on mobile */
-    margin-left: 10px;
-    margin-right: 10px;
+  .text-left {
+    text-align: left;
   }
 }
 
@@ -146,7 +143,7 @@
   .greeting-text-p {
     font-size: large !important;
     line-height: normal;
-    text-align: center; /* Center text */
+    text-align: left; /* Center text */
     margin-left: 10px;
     margin-right: 10px;
   }
