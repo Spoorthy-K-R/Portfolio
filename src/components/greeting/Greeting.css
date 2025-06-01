@@ -136,8 +136,8 @@
   .button-greeting-div {
     justify-content: center; /* Center buttons */
     flex-wrap: wrap; /* Allow buttons to stack on mobile */
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1.25rem;
+    margin-right: 1rem;
   }
 
   .greeting-text-p {
@@ -145,7 +145,7 @@
     line-height: normal;
     text-align: left; /* Center text */
     margin-left: 1.25rem;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
   }
 
   .greeting-main {
