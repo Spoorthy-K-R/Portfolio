@@ -27,10 +27,19 @@
 .project-button {
   display: flex;
   justify-content: center;
-  margin-top: 10rem;
+  margin-top: 9rem;
+}
+
+.publication-button {
+  display: flex;
+  justify-content: center;
 }
 
 .project-button > .main-button {
+  margin-right: 0 !important;
+}
+
+.publication-button > .main-button {
   margin-right: 0 !important;
 }
 

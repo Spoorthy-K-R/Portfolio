@@ -163,7 +163,7 @@ const bigProjects = {
     {
       // image: require("./assets/images/saayaHealthLogo.webp"),
       id: 1,
-      projectName: "DeepNOMA",
+      projectName: "Deep Learning for NOMA",
       projectDesc: "A Deep Learning Approach for Signal Detection in Non-Orthogonal Multiple Access Systems",
       
       repoLink: "https://github.com/Spoorthy-K-R/Deep-Learning-for-Signal-Detection-in-NOMA-systems",
@@ -176,6 +176,8 @@ const bigProjects = {
       projectDesc: "A Deep Learning Framework for Radiogenomic Classification of Brain Tumors",
       
       repoLink: "https://github.com/Spoorthy-K-R/Deep-Learning-based-approach-for-Radiogenomic-Classification-of-Brain-Tumor",
+      publicationLink: "https://ieeexplore.ieee.org/document/10039760",
+      conference: "2022 IEEE 19th India Council International Conference (INDICON)",
       lottie: brainAnimation
     },
     {
@@ -190,10 +192,12 @@ const bigProjects = {
     {
       // image: require("./assets/images/nextuLogo.webp"),
       id: 4,
-      projectName: "DL-RSMA",
+      projectName: "Deep Learning for RSMA",
       projectDesc: "A deep learning-based framework to optimize resource allocation and signal decoding in Rate-Splitting Multiple Access (RSMA) systems.",
       
       repoLink: "https://github.com/Spoorthy-K-R/Deep-Learning-for-RSMA",
+      publicationLink: "https://ieeexplore.ieee.org/document/10068068",
+      conference: "2023 National Conference on Communications (NCC)",
       lottie: splitSignal
     },
     {
