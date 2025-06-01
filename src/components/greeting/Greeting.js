@@ -30,13 +30,36 @@ export default function Greeting() {
                 {greeting.title}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
-              <p
+              {/* <p
                 className={
                  "greeting-text-p subTitle text-left"
                 }
               >
                 {greeting.subTitle}
-              </p>
+              </p> */}
+              <div className={
+                 "greeting-text-p subTitle text-left"
+                }>
+              {greeting.subTitle.map((skills, i) => {
+                return (
+                  <p className="skills-text">
+                    {Array.isArray(skills) ? (
+                      skills.map((segment, j) => (
+                        j === 1 ? (
+                          <span key={j} className="university-highlight">
+                            {segment}
+                          </span>
+                        ) : (
+                          <span key={j}>{segment}</span>
+                        )
+                      ))
+                    ) : (
+                      skills
+                    )}
+                  </p>
+                );
+              })}
+            </div>
               <div id="resume" className="empty-div"></div>
               {/* <SocialMedia /> */}
               <div className="button-greeting-div">

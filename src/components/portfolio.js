@@ -28,9 +28,22 @@ const greeting = {
   username: "Spoorthy",
   java: "print(\"Hello World\")",
   title: "I'm Spoorthy",
-  subTitle: emoji(
-    "A passionate Full Stack Software Developer 👩🏻‍💻 with experience in building backend systems using Java / Spring Boot and responsive UI with JavaScript / React.js. Passionate about AI, I'm eager to apply my skills to create meaningful impact."
-  ),
+  subTitle: [
+    [
+      "➤ I'm a Full Stack Developer and AI enthusiast, currently pursuing a Master's degree in Computer Science at ",
+      "Texas A&M University",
+      "."
+    ],
+    [
+      "➤ Former Software Engineer at ",
+      "JP Morgan Chase",
+      " with 2+ years of experience building scalable microservices using Java-Spring Boot and React"
+    ],
+    ["➤ Now diving deeper into AI, backed by a strong academic foundation with a ",
+    "gold medal",
+    "  for graduating top of my class in B.Tech."
+    ]
+  ],
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -56,14 +69,14 @@ const skillsSection = {
   subTitle: "SOFTWARE DEVELOPER WHO IS INTO AI",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⪼ Develop robust microservices using Spring Boot, MQ and Kafka for high-performance and scalable applications"
     ),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⪼ Develop highly interactive Front end / User Interfaces using React"
+    ),
+    emoji("⪼ Research and development of AI models to solve real-world problems using Python, TensorFlow and MATLAB"),
+    emoji(
+      "⪼ Integration of AI models into applications for intelligent features like recommendations, automation and natural language understanding"
     )
   ],
 
@@ -120,19 +133,23 @@ const educationInfo = {
       schoolName: "Texas A&M University",
       logo: require("../assets/images/TAMULogo.jpg"),
       subHeader: "Masters Degree in Computer Science",
-      duration: "August 2025 - April 2027",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.......................",
+      duration: "August 2025 - May 2027",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Coursework in AI, Software Engineering and Advanced Algorithms",
       ]
     },
     {
       schoolName: "PES University",
       logo: require("../assets/images/PESLogo.png"),
-      subHeader: "Bachelor of Technology in Electronics and Communication Engineering",
+      subHeader: "B.Tech Electronics and Communication Engineering 9.68/10",
       duration: "August 2019 - May 2023",
-      desc: "Gold Medalist. Took minor course in Data Structures and Cybersecurity",
-      descBullets: ["Published 2 papers in Deep Learning"]
+      desc: "",
+      descBullets: ["Gold Medalist",
+        "Minor course in Data Structures and Cybersecurity",
+        "Teaching Assistant for Digital Image Processing",
+        "Class Representative for 3 years",
+        "IEEE publications based on Deep Learning"]
     }
   ]
 };
@@ -217,28 +234,39 @@ const bigProjects = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
   experience: [
     {
       role: "Software Engineer",
       company: "JP Morgan Chase & Co.",
       companylogo: require("../assets/images/jpmorganlogo.png"),
       date: "Jun 2023 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: [
+        "Implemented features to improve the functionality and operational efficiency of services handling FX Options trade settlement"
+      ]
     },
     {
       role: "Software Engineer Intern",
       company: "JP Morgan Chase & Co. - Spring Intern",
       companylogo: require("../assets/images/jpmorganlogo.png"),
       date: "Feb 2023 – May 2023",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: [
+        "Developed a React dashboard for real-time monitoring of microservices on Kubernetes cluster, with features for instance scaling and log streaming to enhance troubleshooting efficiency",
+        "Implemented features to analyze individual trade flow and status, enabling quick identification of processing failures and boosting test environment support efficiency",
+        "Created RESTful APIs using Spring Boot and integrated with frontend React components",
+      ]
     },
     {
       role: "Machine Learning Intern",
       company: "Bosch - Summer Intern",
       companylogo: require("../assets/images/boschlogo.png"),
       date: "Jun 2022 – Jul 2022",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: [
+        "Researched and implemented deep learning models for signal processing applications",
+        "Developed Python scripts for data preprocessing and model training",
+        "Created visualization tools for analyzing model performance",
+        "Presented findings and recommendations to the technical team"
+      ]
     }
   ]
 };

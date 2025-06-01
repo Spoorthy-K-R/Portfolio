@@ -104,7 +104,13 @@ export default function Education() {
             <h2>{experiences[selectedIndex].company}</h2>
             <h3>{experiences[selectedIndex].role}</h3>
             <p className="education-duration">{experiences[selectedIndex].date}</p>
-            {experiences[selectedIndex].desc && <p className="education-bullets">{experiences[selectedIndex].desc}</p>}
+            {experiences[selectedIndex].desc && (
+              <ul className="education-bullets">
+                {experiences[selectedIndex].desc.map((bullet, index) => (
+                  <li key={index}>{bullet}</li>
+                ))}
+              </ul>
+            )}
             {/* {schools[selectedIndex].descBullets.length > 0 && (
               <p className="education-bullets">
                 {schools[selectedIndex].descBullets.map((bullet, i) => (
