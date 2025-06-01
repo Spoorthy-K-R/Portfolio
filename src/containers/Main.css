@@ -15,6 +15,7 @@
   padding: 0 1rem;
 }
 
+
 @media (min-width: 1025px) {
   .skills-education-container {
     flex-direction: row;

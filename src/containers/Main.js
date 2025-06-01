@@ -43,8 +43,8 @@ const Main = () => {
       <Header />        
       <Greeting />
       <div className="skills-education-container">
-        <Skills />
-        <Education />
+        <Skills/>
+        <Education/>
       </div>
       {/* <StackProgress /> */}
       <WorkExperience />
