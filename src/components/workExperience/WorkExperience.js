@@ -1,8 +1,8 @@
 import "./WorkExperience.css";
 // import EducationCard from "../../components/educationCard/EducationCard";
 import {workExperiences} from "../portfolio";
-import React, {createRef, useState} from "react";
-import {Fade, Slide, Zoom} from "react-awesome-reveal";
+import React, {createRef, useState, useEffect} from "react";
+// import {Fade, Slide, Zoom} from "react-awesome-reveal";
 import degree from "../../assets/lottie/degree";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
@@ -76,9 +76,32 @@ import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function Education() {
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const experiences = workExperiences.experience;
-    return (
-      <div className="education-section" id="experience"> 
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const CompanyItem = ({ comp, index }) => {
+    const content = (
+      <div
+        onClick={() => setSelectedIndex(index)}
+        className={`education-item ${index === selectedIndex ? "active" : ""}`}
+      >
+        {comp.company}
+      </div>
+    );
+
+    return windowWidth > 768 ? (
+      content
+    ) : content;
+  };
+
+  return (
+    <div className="education-section" id="experience"> 
       {/* <Zoom duration={500}> */}
         <h1 className="education-heading">Work Experience</h1>
       {/* </Zoom> */}
@@ -87,19 +110,7 @@ export default function Education() {
             <div className="education-list">
               <div className="vertical-line" />
               {experiences.map((comp, index) => (
-                <Slide direction="left" delay={index * 100} duration={800} key={index}>
-                  <div
-                    onClick={() => setSelectedIndex(index)}
-                    className={`education-item ${index === selectedIndex ? "active" : ""}`}
-                  >
-                    {/* <img
-                      src={comp.companylogo}
-                      alt={comp.company}
-                      className="education-logo"
-                    /> */}
-                    {comp.company}
-                  </div>
-                </Slide>
+                <CompanyItem key={index} comp={comp} index={index} />
               ))}
             </div>
           </div>
@@ -128,28 +139,5 @@ export default function Education() {
           </div>
         </div>
       </div>
-
-    //   <div className="education-content">
-    //   <div className="education-card-container">
-    //     {educationInfo.schools.map((school, index) => (
-    //       <EducationCard key={index} school={school} />
-    //     ))}
-    //   </div>
-    //   <div className="education-animation">
-    //     <DisplayLottie animationData={degree} />
-    //   </div>
-    // </div>
-
-
-    // <section className="education-section"> 
-    //   <h1 className="education-heading">Education</h1>
-    //   <div className="education-content" id="education">
-    //     <div className="education-card-container">
-    //       {educationInfo.schools.map((school, index) => (
-    //         <EducationCard key={index} school={school} />
-    //       ))}
-    //     </div>
-    //   </div>
-    //   </section>
 )
 }

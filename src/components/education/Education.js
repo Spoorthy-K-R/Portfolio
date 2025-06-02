@@ -3,13 +3,13 @@ import "./Education.css";
 import {educationInfo} from "../portfolio";
 import ColorThief from "colorthief";
 import 'react-vertical-timeline-component/style.min.css';
-import {Fade, Zoom, Slide} from "react-awesome-reveal";
+// import {Fade, Zoom, Slide} from "react-awesome-reveal";
 
 
 const CustomVerticalTimeline = ({ events }) => {
   return (
     <div className="timeline-container">
-      <Slide direction="right" delay={100} duration={800}>
+      {/* <Slide direction="right" delay={100} duration={800}> */}
       {events.map((card, index) => (
         <div className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}>
         <div className="timeline-icon">
@@ -51,7 +51,7 @@ const CustomVerticalTimeline = ({ events }) => {
         )}
       </div>
       ))}
-      </Slide>
+      {/* </Slide> */}
     </div>
   );
 };

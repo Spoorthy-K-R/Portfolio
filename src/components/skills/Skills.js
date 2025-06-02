@@ -3,8 +3,8 @@ import "./Skills.css";
 // import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import {illustration, skillsSection} from "../portfolio";
 import {Fade, Slide, Zoom} from "react-awesome-reveal";
-import codingPerson from "../../assets/lottie/coding";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+// import codingPerson from "../../assets/lottie/coding";
+// import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import StyleContext from "../../contexts/StyleContext";
 
@@ -50,7 +50,7 @@ export default function Skills() {
             )}
           </div> */}
         {/* </Fade> */}
-        {/* <Fade left duration={2000}> */}
+        <Fade left duration={2000}>
           <div className="skills-text-div">
           {/* <Zoom duration={500}> */}
             <h1
@@ -70,19 +70,19 @@ export default function Skills() {
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (
-                  <Slide direction="left" delay={i * 100} duration={800} key={i}>
+                  // <Slide direction="left" delay={100} duration={800}>
                   <p
                     key={i}
                     className={"skills-text"}
                   >
                     {skills}
                   </p>
-                  </Slide>
+                  // </Slide>
                 );
               })}
             </div>
           </div>
-        {/* </Fade> */}
+        </Fade>
       </div>
   );
 }
