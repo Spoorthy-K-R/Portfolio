@@ -36,7 +36,7 @@
 /* Root Styles */
 .experience-card {
   position: relative;
-  background-color: #ffffff; /* fallback for $lightBackground2 */
+  background-color: #ffffff5b; /* fallback for $lightBackground2 */
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -15px;
   border-radius: 10px;
   border: 1px solid #ffffff; /* fallback for $lightBorder1 */
@@ -220,7 +220,7 @@
 .timeline-icon {
   position: absolute;
   top: 20px;
-  background: white;
+  background: rgba(255, 255, 255, 0.665);
   border: 3px solid #58abd1;
   border-radius: 50%;
   width: 56px;
@@ -253,7 +253,7 @@
 }
 
 .timeline-content {
-  background: #f9f9f9;
+  background: #f9f9f98c;
   padding: 15px 20px;
   border-radius: 8px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
