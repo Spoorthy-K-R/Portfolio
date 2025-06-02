@@ -3,7 +3,7 @@ import "./GithubProfileCard.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {contactInfo, isHireable} from "../portfolio";
 import emoji from "react-easy-emoji";
-import {Fade} from "react-awesome-reveal";
+import {Fade, Zoom} from "react-awesome-reveal";
 
 export default function GithubProfileCard({prof}) {
   if (isHireable) {
@@ -17,7 +17,9 @@ export default function GithubProfileCard({prof}) {
       <div className="main" id="contact">
         <div className="row">
           <div className="main-content-profile">
+          <Zoom duration={500}>
             <h1 className="prof-title">Reach Out to me!</h1>
+            </Zoom>
             {prof.location !== null && (
                 <span className="desc-prof">
                 <svg

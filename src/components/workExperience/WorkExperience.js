@@ -2,7 +2,7 @@ import "./WorkExperience.css";
 // import EducationCard from "../../components/educationCard/EducationCard";
 import {workExperiences} from "../portfolio";
 import React, {createRef, useState} from "react";
-import {Fade, Slide} from "react-awesome-reveal";
+import {Fade, Slide, Zoom} from "react-awesome-reveal";
 import degree from "../../assets/lottie/degree";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
@@ -79,45 +79,52 @@ export default function Education() {
   const experiences = workExperiences.experience;
     return (
       <div className="education-section" id="experience"> 
-      <h1 className="education-heading">Work Experience</h1>
+      {/* <Zoom duration={500}> */}
+        <h1 className="education-heading">Work Experience</h1>
+      {/* </Zoom> */}
       <div className="education-container">
         <div className="education-sidebar">
             <div className="education-list">
               <div className="vertical-line" />
               {experiences.map((comp, index) => (
-                <div
-                  key={index}
-                  onClick={() => setSelectedIndex(index)}
-                  className={`education-item ${index === selectedIndex ? "active" : ""}`}
-                >
-                  {/* <img
-                    src={comp.companylogo}
-                    alt={comp.company}
-                    className="education-logo"
-                  /> */}
-                  {comp.company}
-                </div>
+                <Slide direction="left" delay={index * 100} duration={800} key={index}>
+                  <div
+                    onClick={() => setSelectedIndex(index)}
+                    className={`education-item ${index === selectedIndex ? "active" : ""}`}
+                  >
+                    {/* <img
+                      src={comp.companylogo}
+                      alt={comp.company}
+                      className="education-logo"
+                    /> */}
+                    {comp.company}
+                  </div>
+                </Slide>
               ))}
             </div>
           </div>
           <div className="education-details">
-            <h2>{experiences[selectedIndex].company}</h2>
-            <h3>{experiences[selectedIndex].role}</h3>
-            <p className="education-duration">{experiences[selectedIndex].date}</p>
-            {experiences[selectedIndex].desc && (
-              <ul className="education-bullets">
-                {experiences[selectedIndex].desc.map((bullet, index) => (
-                  <li key={index}>{bullet}</li>
-                ))}
-              </ul>
-            )}
-            {/* {schools[selectedIndex].descBullets.length > 0 && (
-              <p className="education-bullets">
-                {schools[selectedIndex].descBullets.map((bullet, i) => (
-                  <li key={i}>{bullet}</li>
-                ))}
-              </p>
-            )} */}
+            {/* <Fade duration={1000}> */}
+              <h2>{experiences[selectedIndex].company}</h2>
+              <h3>{experiences[selectedIndex].role}</h3>
+              <p className="education-duration">{experiences[selectedIndex].date}</p>
+              {experiences[selectedIndex].desc && (
+                <ul className="education-bullets">
+                  {experiences[selectedIndex].desc.map((bullet, index) => (
+                    // <Fade key={index} delay={index * 100} duration={200}>
+                      <li>{bullet}</li>
+                    // </Fade>
+                  ))}
+                </ul>
+              )}
+              {/* {schools[selectedIndex].descBullets.length > 0 && (
+                <p className="education-bullets">
+                  {schools[selectedIndex].descBullets.map((bullet, i) => (
+                    <li key={i}>{bullet}</li>
+                  ))}
+                </p>
+              )} */}
+            {/* </Fade> */}
           </div>
         </div>
       </div>
