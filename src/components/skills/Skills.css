@@ -40,7 +40,7 @@
 /* Media Query for large screens up to 1380px */
 @media (max-width: 1380px) and (min-width: 769px) {
   .skills-heading {
-    font-size: 50px;
+    font-size: 56px;
     margin-bottom: 2rem;
   }
 
