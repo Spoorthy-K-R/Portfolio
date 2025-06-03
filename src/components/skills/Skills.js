@@ -11,7 +11,7 @@ import {Fade, Slide, Zoom} from "react-awesome-reveal";
 function SoftwareSkill() {
   return (
     <div>
-      <div className="software-skills-main-div">
+      <div className="software-skills-main-div" >
         <ul className="dev-icons">
           {skillsSection.softwareSkills.map((skills, i) => {
             return (
