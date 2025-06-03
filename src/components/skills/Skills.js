@@ -50,7 +50,7 @@ export default function Skills() {
             )}
           </div> */}
         {/* </Fade> */}
-        {/* <Fade left duration={2000}> */}
+        <Fade left duration={2000}>
           <div className="skills-text-div">
           {/* <Zoom duration={250}> */}
             <h1
@@ -82,7 +82,7 @@ export default function Skills() {
               })}
             </div>
           </div>
-        {/* </Fade> */}
+        </Fade>
       </div>
   );
 }
