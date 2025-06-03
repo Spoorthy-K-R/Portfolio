@@ -50,11 +50,12 @@ export default function Skills() {
             )}
           </div> */}
         {/* </Fade> */}
-        <Fade left duration={2000}>
+        <Fade left duration={200}>
           <div className="skills-text-div">
           {/* <Zoom duration={250}> */}
             <h1
               className={ "skills-heading"}
+
             >
               {skillsSection.title}{" "}
             </h1>
