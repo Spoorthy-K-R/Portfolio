@@ -2,7 +2,7 @@ import "./WorkExperience.css";
 // import EducationCard from "../../components/educationCard/EducationCard";
 import {workExperiences} from "../portfolio";
 import React, {createRef, useState, useEffect} from "react";
-// import {Fade, Slide, Zoom} from "react-awesome-reveal";
+import {Fade, Slide, Zoom} from "react-awesome-reveal";
 import degree from "../../assets/lottie/degree";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
@@ -96,7 +96,10 @@ export default function Education() {
     );
 
     return windowWidth > 768 ? (
-      content
+      <Slide direction="left" delay={index * 100} duration={800} key={index}>
+        {content}
+      </Slide>
+      
     ) : content;
   };
 

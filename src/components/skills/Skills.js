@@ -52,7 +52,7 @@ export default function Skills() {
         {/* </Fade> */}
         <Fade left duration={2000}>
           <div className="skills-text-div">
-          {/* <Zoom duration={500}> */}
+          {/* <Zoom duration={250}> */}
             <h1
               className={ "skills-heading"}
             >
@@ -70,14 +70,14 @@ export default function Skills() {
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (
-                  // <Slide direction="left" delay={100} duration={800}>
+                  <Slide direction="left" delay={100} duration={800}>
                   <p
                     key={i}
                     className={"skills-text"}
                   >
                     {skills}
                   </p>
-                  // </Slide>
+                  </Slide>
                 );
               })}
             </div>
