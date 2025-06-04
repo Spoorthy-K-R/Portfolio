@@ -78,6 +78,7 @@ export default function Education() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const experiences = workExperiences.experience;
+  const [workAnimation, setWorkAnimation] = useState(true);
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -88,14 +89,14 @@ export default function Education() {
   const CompanyItem = ({ comp, index }) => {
     const content = (
       <div
-        onClick={() => setSelectedIndex(index)}
+        onClick={() => {setSelectedIndex(index); setWorkAnimation(false);}}
         className={`education-item ${index === selectedIndex ? "active" : ""}`}
       >
         {comp.company}
       </div>
     );
 
-    return windowWidth > 768 ? (
+    return (workAnimation && windowWidth > 768) ? (
       <Slide direction="left" delay={index * 100} duration={800} key={index}>
         {content}
       </Slide>
@@ -131,14 +132,6 @@ export default function Education() {
                   ))}
                 </ul>
               )}
-              {/* {schools[selectedIndex].descBullets.length > 0 && (
-                <p className="education-bullets">
-                  {schools[selectedIndex].descBullets.map((bullet, i) => (
-                    <li key={i}>{bullet}</li>
-                  ))}
-                </p>
-              )} */}
-            {/* </Fade> */}
           </div>
         </div>
       </div>
