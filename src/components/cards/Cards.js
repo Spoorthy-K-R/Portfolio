@@ -118,7 +118,6 @@ export default function HorizontalSwipeStack() {
                 onTouchStart={i === activeIndex ? handleTouchStart : undefined}
                 onTouchEnd={i === activeIndex ? handleTouchEnd : undefined}
               >
-
                 <div className="lottie-background">
                   <Lottie 
                     animationData={card.lottie} 
@@ -128,17 +127,25 @@ export default function HorizontalSwipeStack() {
                   />
                 </div>
 
-                <h2>{card.projectName}</h2>
-                <p>{card.projectDesc}</p>
-
-                <Button text="Project Link" href={card.repoLink} className="project-button" />
-                {card.publicationLink && (
-                  <div className="publication-info">
-                    <p className="conference-text">{card.conference}</p>
-                    <Button text="DOI" href={card.publicationLink} className="publication-button" />
+                <div className="card-top-section">
+                  <h2>{card.projectName}</h2>
+                  <p>{card.projectDesc}</p>
+                  <div className="tech-stack">
+                    {card.techStack && card.techStack.map((tech, index) => (
+                      <span key={index} className="tech-item">{tech}</span>
+                    ))}
                   </div>
-                )}
-                
+                </div>
+
+                <div className="card-bottom-section">
+                  <Button text="Project Link" href={card.repoLink} className="project-button" />
+                  {card.publicationLink && (
+                    <div className="publication-info">
+                      <p className="conference-text">{card.conference}</p>
+                      <Button text="DOI" href={card.publicationLink} className="publication-button" />
+                    </div>
+                  )}
+                </div>
               </div>
             );
           })}

@@ -187,6 +187,7 @@ const bigProjects = {
       repoLink: "https://github.com/Spoorthy-K-R/Deep-Learning-for-RSMA",
       publicationLink: "https://ieeexplore.ieee.org/document/10068068",
       conference: "2023 National Conference on Communications (NCC)",
+      techStack: ["MATLAB","Deep Learning","LSTM","RSMA","Signal Detection","Beyond 5G networks"],
       lottie: splitSignal
     },
     {
@@ -198,6 +199,7 @@ const bigProjects = {
       repoLink: "https://github.com/Spoorthy-K-R/Deep-Learning-based-approach-for-Radiogenomic-Classification-of-Brain-Tumor",
       publicationLink: "https://ieeexplore.ieee.org/document/10039760",
       conference: "2022 IEEE 19th India Council International Conference (INDICON)",
+      techStack: ["Python","Deep Learning","ResNet","Image Processing","Convolutional Neural Networks"],
       lottie: brainAnimation
     },
     {
@@ -207,6 +209,7 @@ const bigProjects = {
       projectDesc: "A Deep Learning Approach for Signal Detection in Non-Orthogonal Multiple Access Systems",
       
       repoLink: "https://github.com/Spoorthy-K-R/Deep-Learning-for-Signal-Detection-in-NOMA-systems",
+      techStack: ["MATLAB","Deep Learning","Non-Orthogonal Multiple Access","Signal Detection"],
       lottie: signal
     },
     {
@@ -216,6 +219,7 @@ const bigProjects = {
       projectDesc: "A platform that streamlines data-driven matchmaking between skilled job seekers, entrepreneurs, and potential investors or companies.",
     
       repoLink: "https://github.com/Spoorthy-K-R/NGO-website-cfg",
+      techStack: ["Django","Python","Flask","React","SQL"],
       lottie: studentAnimation
     },
     {
@@ -224,7 +228,8 @@ const bigProjects = {
       projectName: "Movie Recommender System",
       projectDesc: "A recommender system using collaborative filtering to generate personalized suggestions based on user preferences and behavior.",
     
-      repoLink: "https://github.com/Spoorthy-K-R/Deep-Learning-for-detection-of-Cognitive-Impairment",
+      repoLink: "https://github.com/Spoorthy-K-R/Movie-Recommender-System",
+      techStack: ["Python","Pandas","Numpy","Scikit-learn","Collaborative Filtering"],
       lottie: movieAnimation
     }
   ],
