@@ -1,0 +1,121 @@
+.achievement-heading {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+
+.achievement-subtitle {
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+
+.subTitle {
+  color: #6c757d; /* Replace $subTitle with the actual color value from _globalColor.scss */
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .achievement-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .achievement-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .achievement-subtitle {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  width: 250px;
+}
+
+.card-title {
+  color: /* insert titleColor value here */;
+  font-size: 1.375rem;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 15px 0 0 0;
+}
+
+.card-subtitle {
+  color: /* insert cardSubtitle value here */;
+  font-size: 1.063rem;
+  line-height: 1.5rem;
+}
+
+.certificate-card {
+  background-color: /* insert lightBackground2 value here */;
+  box-shadow: /* insert lightBoxShadowDark value here */ 0px 10px 30px -15px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid /* insert lightBorder1 value here */;
+  transition: all 0.3s ease;
+}
+
+.certificate-detail-div {
+  text-align: center;
+}
+
+.certificate-card:hover {
+  box-shadow: /* insert lightBoxShadowDark value here */ 0px 20px 30px -10px;
+}
+
+.dark-mode .certificate-card:hover {
+  box-shadow: /* insert achievementCertificateCardHoverDark value here */ 0px 20px 30px -10px;
+}
+
+.certificate-image-div {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievement-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem 1rem;
+}
+
+.certificate-card-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.certificate-card-footer span.certificate-tag {
+  background: /* insert buttonColor value here */;
+  color: /* insert lightBackground3 value here */;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 4px;
+  display: inline-flex;
+  font-size: 0.75rem;
+  height: 2em;
+  justify-content: center;
+  white-space: nowrap;
+  line-height: 1.5;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0 0.75em;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+span.certificate-tag:hover {
+  background: /* insert buttonHover value here */;
+}
