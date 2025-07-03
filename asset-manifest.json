@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.34733643.css",
-    "main.js": "/Portfolio/static/js/main.05c3fb9c.js",
+    "main.js": "/Portfolio/static/js/main.ac47ba57.js",
     "static/css/42.a3f9abb8.chunk.css": "/Portfolio/static/css/42.a3f9abb8.chunk.css",
-    "static/js/42.f75f795a.chunk.js": "/Portfolio/static/js/42.f75f795a.chunk.js",
+    "static/js/42.1c1fa5ca.chunk.js": "/Portfolio/static/js/42.1c1fa5ca.chunk.js",
     "static/js/488.307650aa.chunk.js": "/Portfolio/static/js/488.307650aa.chunk.js",
     "static/media/bgg1.png": "/Portfolio/static/media/bgg1.c92277eed8ed0321013d.png",
     "static/media/Spoorthy-Resume.pdf": "/Portfolio/static/media/Spoorthy-Resume.eead5a65c4e2f0ee646e.pdf",
@@ -16,13 +16,13 @@
     "static/media/codeInLogo.webp": "/Portfolio/static/media/codeInLogo.e41a71d512efeda2a55c.webp",
     "index.html": "/Portfolio/index.html",
     "main.34733643.css.map": "/Portfolio/static/css/main.34733643.css.map",
-    "main.05c3fb9c.js.map": "/Portfolio/static/js/main.05c3fb9c.js.map",
+    "main.ac47ba57.js.map": "/Portfolio/static/js/main.ac47ba57.js.map",
     "42.a3f9abb8.chunk.css.map": "/Portfolio/static/css/42.a3f9abb8.chunk.css.map",
-    "42.f75f795a.chunk.js.map": "/Portfolio/static/js/42.f75f795a.chunk.js.map",
+    "42.1c1fa5ca.chunk.js.map": "/Portfolio/static/js/42.1c1fa5ca.chunk.js.map",
     "488.307650aa.chunk.js.map": "/Portfolio/static/js/488.307650aa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.34733643.css",
-    "static/js/main.05c3fb9c.js"
+    "static/js/main.ac47ba57.js"
   ]
 }
