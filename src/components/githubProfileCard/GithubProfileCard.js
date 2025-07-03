@@ -43,7 +43,10 @@ export default function GithubProfileCard({prof}) {
               </p>
               <p className="subTitle ">{contactInfo.subtitle}
               </p>
-              <a className="email" href={`mailto:${contactInfo.mail}`}>{contactInfo.mail}</a>
+              <p className="subTitle ">
+                <a className="email" href={`mailto:${contactInfo.mail}`}>{contactInfo.mail}</a>
+              </p>
+              
             <SocialMedia />
           </div>
           <div className="image-content-profile">
