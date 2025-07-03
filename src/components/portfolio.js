@@ -344,7 +344,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "COFFEE CHAT? My inbox is always open ",
+    "My inbox is always open. Whether you have a question or just want to say hello, I'll try my best to get back to you! Feel free to mail me about any relevant job updates.",
   number: "+91-8660382649",
   mail: "spoorthykr1801@gmail.com",
   email_address: "spoorthykr1801@gmail.com"
