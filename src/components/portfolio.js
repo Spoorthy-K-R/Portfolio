@@ -130,17 +130,18 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Texas A&M University",
+      schoolName: "Texas A&M University (CGPA: 4.0/4.0)",
       logo: require("../assets/images/TAMULogo.jpg"),
       subHeader: "Masters Degree in Computer Science",
       duration: "August 2025 - May 2027",
       desc: "",
       descBullets: [
-        "Coursework in AI, Software Engineering and Advanced Algorithms",
+        "SEM I: Deep Learning, Software Engineering, Analysis of Algorithms",
+        "SEM II: Information Storage and Retrieval, Natural Language Processing, Operating Systems"
       ]
     },
     {
-      schoolName: "PES University (CGPA 9.68/10)",
+      schoolName: "PES University (CGPA: 9.68/10)",
       logo: require("../assets/images/PESLogo.png"),
       subHeader: "B.Tech Electronics and Communication Engineering",
       duration: "August 2019 - May 2023",
@@ -193,14 +194,34 @@ const bigProjects = {
     {
       // image: require("./assets/images/saayaHealthLogo.webp"),
       id: 2,
-      projectName: "Genomage",
-      projectDesc: "A Deep Learning Framework for Radiogenomic Classification of Brain Tumors",
+      projectName: "Radiogenomic Classification of Brain Tumor",
+      projectDesc: "Deep learning-based classification of MGMT promoter methylation using structural MRI to optimize non-invasive brain tumor diagnostics.",
       
       repoLink: "https://github.com/Spoorthy-K-R/Deep-Learning-based-approach-for-Radiogenomic-Classification-of-Brain-Tumor",
       publicationLink: "https://ieeexplore.ieee.org/document/10039760",
       conference: "2022 IEEE 19th India Council International Conference (INDICON)",
-      techStack: ["Python","Deep Learning","ResNet","Image Processing","Convolutional Neural Networks"],
+      techStack: ["Python","Convolutional Neural Networks","Image Processing"],
       lottie: brainAnimation
+    },
+    {
+      // image: require("./assets/images/saayaHealthLogo.webp"),
+      id: 6,
+      projectName: "AI Powered Document Classifier",
+      projectDesc: "This application provides an API to process PDF files, extract text, perform OCR, calculate a legibility score and classify documents using an LLM.",
+    
+      repoLink: "https://github.com/Spoorthy-K-R/AI-powered-document-classifier",
+      techStack: ["Python","FastAPI","Ollama","PyMuPDF","Pytesseract","Langchain"],
+      lottie: movieAnimation
+    },
+    {
+      // image: require("./assets/images/saayaHealthLogo.webp"),
+      id: 7,
+      projectName: "Spotilytics - Spotify Analytics Dashboard",
+      projectDesc: "Spotilytics is a Ruby on Rails web application that connects to the Spotify Web API to generate an on-demand “Spotify Wrapped” experience. Users can log in with their Spotify account to instantly view their Top Tracks, Top Artists, Genre insights, Mood Dashboard, Listening Patterns and a lot more.",
+    
+      repoLink: "https://github.com/Spoorthy-K-R/Spotilytics",
+      techStack: ["Ruby on Rails","JavaScript","Spotify Web API","Chart.js"],
+      lottie: movieAnimation
     },
     {
       // image: require("./assets/images/saayaHealthLogo.webp"),
@@ -215,8 +236,8 @@ const bigProjects = {
     {
       // image: require("./assets/images/nextuLogo.webp"),
       id: 3,
-      projectName: "Sobus",
-      projectDesc: "A platform that streamlines data-driven matchmaking between skilled job seekers, entrepreneurs, and potential investors or companies.",
+      projectName: "SkillSync NGO website",
+      projectDesc: "A platform that streamlines data-driven matchmaking between skilled job seekers, entrepreneurs and potential investors or companies.",
     
       repoLink: "https://github.com/Spoorthy-K-R/NGO-website-cfg",
       techStack: ["Django","Python","Flask","React","SQL"],
@@ -245,9 +266,12 @@ const workExperiences = {
       role: "Software Engineer",
       company: "JP Morgan Chase & Co.",
       companylogo: require("../assets/images/jpmorganlogo.png"),
-      date: "Jun 2023 – Present",
+      date: "Jun 2023 – July 2025",
       desc: [
-        "Implemented features to improve the functionality and operational efficiency of services handling FX Options trade settlement"
+        "Designed and deployed scalable Spring Boot microservices for processing 250-300k daily volumes of Foreign Exchange trades worth $10-15B, reducing operational risk and maintenance costs while improving system resilience.",
+        "Built reusable Java libraries to support multi-MQ consumers and Kafka Ack/Nack handling between services, enhancing observability across platforms and reducing message debugging time by 4-5 hours per service.",
+        "Migrated and optimized on-premise Oracle databases to cloud-based infrastructure with minimal downtime and optimized storage and query performance through defragmentation tasks.",
+        "Converted the REST APIs between the UI and backend to GraphQL reducing frontend data processing complexity and improving load time by ~100ms."
       ]
     },
     {
@@ -256,9 +280,8 @@ const workExperiences = {
       companylogo: require("../assets/images/jpmorganlogo.png"),
       date: "Feb 2023 – May 2023",
       desc: [
-        "Developed a React dashboard for real-time monitoring of microservices on Kubernetes cluster, with features for instance scaling and log streaming to enhance troubleshooting efficiency",
-        "Implemented features to analyze individual trade flow and status, enabling quick identification of processing failures and boosting test environment support efficiency",
-        "Created RESTful APIs using Spring Boot and integrated with frontend React components",
+        "Led development of a real-time trade flow monitoring platform using React and Spring Boot that improved visibility across 20+ microservices, enabling faster root-cause analysis and smoother system operations.",
+        "Implemented dynamic pod scaling, live log streaming and service health monitoring to enable granular tracking of trades and real-time failure alerts, cutting resolution time by 40% and enhancing support team efficiency.",
       ]
     },
     {
@@ -267,10 +290,9 @@ const workExperiences = {
       companylogo: require("../assets/images/boschlogo.png"),
       date: "Jun 2022 – Jul 2022",
       desc: [
-        "Researched and implemented deep learning models for signal processing applications",
-        "Developed Python scripts for data preprocessing and model training",
-        "Created visualization tools for analyzing model performance",
-        "Presented findings and recommendations to the technical team"
+        "Engineered a Natural Language Processing-driven preprocessing pipeline using spaCy, NLTK and regex to transform symbolic reports into structured data by extracting key test parameters, enabling downstream ML model training.",
+        "Developed a custom position-based vectorizer to encode term locations relative to a pivot element, boosting parsing accuracy of equations into LHS/RHS components by ~30% and ensuring accurate execution and validation of tests.",
+        "Trained and optimised Random Forest and SVM models on structured Electric Vehicle component testing dataset achieving 85%+ accuracy in auto-generating test instructions, reducing manual effort by 60%."
       ]
     }
   ]
@@ -345,7 +367,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "My inbox is always open. Whether you have a question or just want to say hello, I'll try my best to get back to you! Feel free to mail me about any relevant job updates.",
-  number: "+91-8660382649",
+  number: "+1 (979) 599-4184",
   mail: "spoorthykr1801@gmail.com",
   email_address: "spoorthykr1801@gmail.com"
 };
