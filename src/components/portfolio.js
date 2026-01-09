@@ -225,6 +225,16 @@ const bigProjects = {
     },
     {
       // image: require("./assets/images/saayaHealthLogo.webp"),
+      id: 8,
+      projectName: "Financial Statement Analysis and Insights Platform",
+      projectDesc: "An automated NLP pipeline using LLMs to extract SEC 10-K filings and generate actionable investment insights for S&P 100 companies. It leverages LLMs to distill complex regulatory disclosures into actionable financial insights for S&P 100 investors.",
+    
+      repoLink: "https://github.com/Spoorthy-K-R/Financial-Data-Analysis",
+      techStack: ["Python","LangChain","Gemini","Pandas","SEC EDGAR"],
+      lottie: movieAnimation
+    },
+    {
+      // image: require("./assets/images/saayaHealthLogo.webp"),
       id: 4,
       projectName: "Deep Learning for NOMA",
       projectDesc: "A Deep Learning Approach for Signal Detection in Non-Orthogonal Multiple Access Systems",
