@@ -68,15 +68,15 @@ const skillsSection = {
   title: "What I do",
   subTitle: "SOFTWARE ENGINEER TURNED CS GRAD, EXPLORING THE WORLD OF AI",
   skills: [
+    emoji("⪼ Research and development of AI models to solve real-world problems using Python, TensorFlow and MATLAB"),
+    emoji(
+      "⪼ Integration of AI models into applications for intelligent features like recommendations, automation and natural language understanding"
+    ),
     emoji(
       "⪼ Develop robust microservices using Spring Boot, MQ and Kafka for high-performance and scalable applications"
     ),
     emoji(
       "⪼ Develop highly interactive Front end / User Interfaces using React"
-    ),
-    emoji("⪼ Research and development of AI models to solve real-world problems using Python, TensorFlow and MATLAB"),
-    emoji(
-      "⪼ Integration of AI models into applications for intelligent features like recommendations, automation and natural language understanding"
     )
   ],
 
